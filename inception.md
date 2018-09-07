@@ -11,11 +11,11 @@ We want to use openCVL but we are not sure how well it will work cross-platforms
 
 # Use Cases / Screenshots
 1) 5 lesson plans
-	a) letters (a-z)
-	b) number (1-100)
-	c) shapes
-	d) words (school words)
-	e) math (add, subtract)
+	a) letters (a-z)  
+	b) number (1-100)  
+	c) shapes  
+	d) words (school words)  
+	e) math (add, subtract)  
 2) SQLite database
 3) Android and iOS
 4) Produces audio
