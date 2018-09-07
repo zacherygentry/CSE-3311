@@ -22,7 +22,7 @@ We want to use openCVL but we are not sure how well it will work cross-platforms
 5) Capture screen images
 6) Validates images for correctness
 
-
+!['ui layout'](https://github.com/zacherygentry/CSE-3311/blob/master/Images/UI-layout.jpg?raw=true "State Transition Diagram and UI Layout")
 
 # Software Development Plan
 
