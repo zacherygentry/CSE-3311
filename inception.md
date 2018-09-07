@@ -26,3 +26,22 @@ We want to use openCVL but we are not sure how well it will work cross-platforms
 
 # Software Development Plan
 
+### Iteration 1
+* Testing tools (single word test)
+	* able to draw images
+	* audio works
+	* successfully validate drawn words
+
+### Iteration 2
+* Create UI
+* Setup database
+	* populate database
+
+### Iteration 3
+* Create lessons based on data from database
+* Test 5 lessons in app
+
+### Iteration 4
+* Final product
+	* Future plans
+* Polish application
