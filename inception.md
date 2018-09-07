@@ -10,7 +10,7 @@ We want to use openCVL but we are not sure how well it will work cross-platforms
 # Competitors
 
 # Use Cases / Screenshots
-1) 5 lesson plans
+1) 5 lesson plans  
 	a) letters (a-z)  
 	b) number (1-100)  
 	c) shapes  
