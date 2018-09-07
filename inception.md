@@ -62,5 +62,5 @@ We are creating a multi-platform mobile app which focuses on image recognition c
 Targets kids age 2+
 
 ## Education
-Beginners with app development  
-Upperclassmen software engineering students from UTA  
+* Beginners with app development  
+* Upperclassmen software engineering students from UTA  
