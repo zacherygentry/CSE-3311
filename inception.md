@@ -12,6 +12,7 @@ We are creating a multi-platform mobile app which focuses on image recognition c
 # Competitors
 * PocketPhonics
 
+
 # Use Cases and UI Layout
 1) 5 lesson plans  
 	a) letters (a-z)  
@@ -52,7 +53,14 @@ We are creating a multi-platform mobile app which focuses on image recognition c
 * Polish application
 
 ## Tools
+* React Native  
+* Node.js
+* SQLite
+* openCVL
 
 ## People
+Targets kids age 2+
 
 ## Education
+Beginners with app development  
+Upperclassmen software engineering students from UTA  
