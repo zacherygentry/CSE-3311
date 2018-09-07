@@ -1,3 +1,6 @@
-#Vision Statement
+# Vision Statement
 
-We’d like to create a multi-platform mobile app which focuses on the camera capabilities of mobile devices. Our app will focus both on image recognition and being cross-platform for both iOS and Android. Our apps main feature is recognizing text from using a picture and to make it exclusive we will only use one type of font, font size, and have controlled environment for the picture such as image quality, brightness etc..
+We are creating a multi-platform mobile app which focuses on image recognition capabilities in an educational environment. Our app focuses both on text and drawn image recognition and being cross-platform for both iOS and Android. Our app's main feature is recognizing text and images from a drawn source. The app allows for users to go through exercises where they draw or write out a given word or shape and is then checked against our image recognition APIs to see if the user is correct.
+
+# Business Case
+
