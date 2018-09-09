@@ -5,10 +5,10 @@ For CSE-3311, Object Oriented Software Engineering
 Cross-platform educational app that helps kids learn spelling and shapes.
 
 # Proposed Stack
-React Native  
-Node.js
-SQLite
-openCVL
+* React Native
+* Node.js
+* SQLite
+* openCVL
 
 # Tesseract and OpenCV resources
 https://www.learnopencv.com/deep-learning-based-text-recognition-ocr-using-tesseract-and-opencv/
