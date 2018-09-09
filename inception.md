@@ -12,7 +12,7 @@ We are creating a multi-platform mobile app which focuses on image recognition c
 # Competitors
 * PocketPhonics
 * Scribble Cards
-* Trace It Try It
+* Trace It, Try It
 
 
 # Use Cases and UI Layout
