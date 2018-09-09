@@ -30,7 +30,7 @@ We are creating a multi-platform mobile app which focuses on image recognition c
 5) Capture screen images
 6) Validates images for correctness
 
-!['ui layout'](https://github.com/zacherygentry/CSE-3311/blob/master/Images/UI-layout.jpg?raw=true "State Transition Diagram and UI Layout")
+!['ui layout'](https://github.com/zacherygentry/CSE-3311/blob/master/edU%20UI%20Layout.jpg?raw=true "State Transition Diagram and UI Layout")
 
 # Software Development Plan
 
