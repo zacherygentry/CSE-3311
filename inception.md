@@ -11,9 +11,11 @@ We are creating a multi-platform mobile app which focuses on image recognition c
 
 # Competitors
 * PocketPhonics
+  	* Is a learning app, that encourages the child to explore the alphabet by tracing the image of the letter. They also have an option of choosing the letter after hearing the corresponding audio.
 * Scribble Cards
+	* Scribble Cards is similar to PocketPhonics, but also encorporates numbers, as well as, the alphabet. Scribble Cards, on the other hand, does not include an audio learning feature.
 * Trace It, Try It
-
+	* Is a handwriting app that teaches children to trace over pre-drawn alphabets, numbers (0-20), and simple three letter words. 
 
 # Use Cases and UI Layout
 1) 5 lesson plans  
