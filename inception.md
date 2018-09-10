@@ -5,9 +5,9 @@
 We are creating a multi-platform mobile app which focuses on image recognition capabilities in an educational environment. Our app focuses both on text and drawn image recognition and being cross-platform for both iOS and Android. Our app's main feature is recognizing text and images from a drawn source. The app allows for users to go through exercises where they draw or write out a given word or shape and is then checked against our image recognition APIs to see if the user is correct.
 
 # Top 3 Risks
-* Beginners to app development  
-* Short duration to develop the full vision of the application  
-* We want to use openCVL but we are not sure how well it will work cross-platforms
+* 1. Beginners to app development  
+* 2. Short duration to develop the full vision of the application  
+* 3. We want to use openCVL but we are not sure how well it will work cross-platforms
 
 # Competitors
 * PocketPhonics
@@ -17,7 +17,9 @@ We are creating a multi-platform mobile app which focuses on image recognition c
 * Trace It, Try It
 	* Is a handwriting app that teaches children to trace over pre-drawn alphabets, numbers (0-20), and simple three letter words. 
 
-# Use Cases and UI Layout
+# Use Case and UI Layout
+
+*Requirements 
 1) 5 lesson plans  
 	a) letters (a-z)  
 	b) number (1-100)  
@@ -30,7 +32,10 @@ We are creating a multi-platform mobile app which focuses on image recognition c
 5) Capture screen images
 6) Validates images for correctness
 
-!['ui layout'](https://github.com/zacherygentry/CSE-3311/blob/master/edU%20UI%20Layout.jpg?raw=true "State Transition Diagram and UI Layout")
+!['use case'](https://github.com/zacherygentry/CSE-3311/blob/master/edUUseCase.jpg "Use Case") 
+
+!['ui layout'](https://github.com/zacherygentry/CSE-3311/blob/master/edU%20UI%20Layout.jpg?raw=true "UI Layout")
+
 
 # Software Development Plan
 
