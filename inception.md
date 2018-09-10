@@ -5,9 +5,15 @@
 We are creating a multi-platform mobile app which focuses on image recognition capabilities in an educational environment. Our app focuses both on text and drawn image recognition and being cross-platform for both iOS and Android. Our app's main feature is recognizing text and images from a drawn source. The app allows for users to go through exercises where they draw or write out a given word or shape and is then checked against our image recognition APIs to see if the user is correct.
 
 # Top 3 Risks
-* 1. Beginners to app development  
-* 2. Short duration to develop the full vision of the application  
-* 3. We want to use openCVL but we are not sure how well it will work cross-platforms
+* 1) Beginners to app development  
+* 2) Short duration to develop the full vision of the application  
+* 3) We want to use openCVL but we are not sure how well it will work cross-platforms
+
+* How we will overcome each risk:
+* 1) By having proper training through videos and lessons online
+* 2) We can't do anything about the duration of the time we have but we can limit what our deliverable will be and limiting the features that makes it more realistic to finish 
+* 3) By doing more research we can be more certain on how easy/hard it will be to implement on cross platform
+
 
 # Competitors
 * PocketPhonics
