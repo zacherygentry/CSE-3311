@@ -18,6 +18,8 @@ https://www.pyimagesearch.com/2016/12/19/install-opencv-3-on-macos-with-homebrew
 
 # Example App, Competition
 https://itunes.apple.com/us/app/image-to-text-ocr/id1331848060?mt=8
+Scribble Cards
+Trace It, Try It
 
 # Team Members
 Zachery Gentry  
