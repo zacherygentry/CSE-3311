@@ -13,28 +13,28 @@ lesson slot with display date of when the user ended and time it took to complet
  	* Implementation start: In iteration 3 
 
 * Audio
- * Description: User will be able to hear, in each lesson, letters, shapes and words to be able to draw what he or she is just heard. 
- * Implementation start: In iteration 1
+	 * Description: User will be able to hear, in each lesson, letters, shapes and words to be able to draw what he or she is just heard. 
+ 	* Implementation start: In iteration 1
 
 * Drawing pad
- * Description: User will be able to draw on the app what they heard in each lesson.
- * Implementation start: In iteration 1
+ 	* Description: User will be able to draw on the app what they heard in each lesson.
+ 	* Implementation start: In iteration 1
 
 * Shape recognition
- * Description: Application will be able to recognize shapes after user submits their drawing. 
- * Implementation start: In iteration 2
+	 * Description: Application will be able to recognize shapes after user submits their drawing. 
+	 * Implementation start: In iteration 2
     
 * Letter recognition
- * Description: Application will be able to recognize letters after user submits their drawing.
- * Implementation start: In iteration ?
+ 	* Description: Application will be able to recognize letters after user submits their drawing.
+ 	* Implementation start: In iteration ?
 
 * Number recognition
- * Description: Application will be able to recognize letters after user submits their drawing.
- * Implementation start: In iteration ?
+ 	* Description: Application will be able to recognize letters after user submits their drawing.
+ 	* Implementation start: In iteration ?
 
 * Difficulty levels
- * Description: User in each lesson set will be able to select which level, easy, medium, or hard they would like to learn. Each user has the option to start off whatever they feel they would like to start on. The app doesn’t limit options for users based on grade level. 
- * Implementation start: In iteration 3
+ 	* Description: User in each lesson set will be able to select which level, easy, medium, or hard they would like to learn. Each user has the option to start off whatever they feel they would like to start on. The app doesn’t limit options for users based on grade level. 
+ 	* Implementation start: In iteration 3
 
 # Compititors and How edU differs
 
