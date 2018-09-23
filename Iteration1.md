@@ -151,11 +151,11 @@ Each lesson plan will have its own category. E.g. Letters, numbers, shapes, word
 Progress will include whether or not that lesson plan has been completed, and if so, how long it took. 
 
 * Question 5: After developing the app how do you analyze the productivity? You guys are planning to have ​5 lesson plans as:
-letters (a-z)
-number (1-100)
-shapes
-words (school words)
-math (add, subtract)
+letters (a-z),
+ number (1-100),
+ shapes,
+ words (school words),
+ math (add, subtract)
 Do you have any test subjects who goes through all the lessons and determine if its really helpful?
 
 We don’t at the moment, but we are actively searching for options to test.
