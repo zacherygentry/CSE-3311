@@ -36,7 +36,7 @@ lesson slot with display date of when the user ended and time it took to complet
  	* Description: User in each lesson set will be able to select which level, easy, medium, or hard they would like to learn. Each user has the option to start off whatever they feel they would like to start on. The app doesn’t limit options for users based on grade level. 
  	* Implementation start: In iteration 3
 
-# Compititors and How edU differs
+# Competitors and How edU differs
 
 * PocketPhonics
   	* Is a learning app, that encourages the child to explore the alphabet by tracing the image of the letter. They also have an option of choosing the letter after hearing the corresponding audio.
