@@ -123,5 +123,33 @@ Which eliminates the need to download multiple apps and frees up space on the Us
 
 # Addressing Questions from the Review Team
 
+* Question 1: Can the user choose the difficulty to start with (Would new user of age 5 start same as user of age 2?) 
+Yes, the user may choose different lesson plans which entail different difficulties. I.e. They will be allowed to skip an easy lesson plan if they are already good at it.
+
+
+* Question 2: Will the app have login functionally? If so, will the account be under the child or their parent? If not, how will you guys keep track of the users progress. 
+No, the app will not have login functionality. User progress will be kept track of locally within their device.
+
+* Question 3: A 2 year old is barely learning how to speak, so how efficient will the app be listening to the kids ? How will the audio be implemented?(i.e Using API, or built in functionally in react native)
+The app does not listen to the user. Audio is only used to let the user know what to draw. We will play audio as sound clips.
+
+
+* Question 4: It says there are 5 lesson plans, so how do we know the progress? For example on what basis the lesson plans change ? Are there any mechanism to determine the progress that a child is making?
+Each lesson plan will have its own category. E.g. Letters, numbers, shapes, words, and math.
+Progress will include whether or not that lesson plan has been completed, and if so, how long it took. 
+
+* Question 5: After developing the app how do you analyze the productivity? You guys are planning to have ​5 lesson plans as:
+letters (a-z)
+number (1-100)
+shapes
+words (school words)
+math (add, subtract)
+Do you have any test subjects who goes through all the lessons and determine if its really helpful?
+We don’t at the moment, but we are actively searching for options to test.
+Our current plan is to talk to the UTA Child Development Center to see if we could get permission to test with them.
+
+* Question 5: Is there a difficulty limit? Will it involve any difficult problems for older users or stop at a certain grade level.
+The app doesn’t limit options for users based on grade level. 
+This makes it subjective to the user. E.g. One user at age 5 may excel in the math lesson plan, but not so much with shapes, while another user age 3 could excel with shapes, and not so much with math.
 
 
