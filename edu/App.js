@@ -1,14 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import { Svg } from 'expo';
+const { Circle, Rect } = Svg;
+import RNDraw from 'rn-draw';
 
-export default class App extends React.Component {
+// Percentages work in plain react-native but aren't supported in Expo yet, workaround with this or onLayout
+const { width, height } = Dimensions.get('window');
+
+export default class SvgExample extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
+      <RNDraw
+        containerStyle={{ backgroundColor: 'rgba(0,0,0,0.01)' }}
+        rewind={(undo) => { this._undo = undo }}
+        clear={(clear) => { this._clear = clear }}
+        color='#000000'
+        strokeWidth={4}
+      />
     );
   }
 }
@@ -16,8 +24,9 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ffffff',
     alignItems: 'center',
     justifyContent: 'center',
   },
 });
+
