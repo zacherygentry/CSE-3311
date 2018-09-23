@@ -47,32 +47,32 @@ Which eliminates the need to download multiple apps and frees up space on the Us
 # Input and Outputs
 
 * Input 1: Choosing a Lesson Plan (User)
- * Output: The screen displays Start New Lesson, Resume Lesson and View Lesson History buttons.
+	* Output: The screen displays Start New Lesson, Resume Lesson and View Lesson History buttons.
 
 * Input 2: Pressing the View History button (User)
- * Output: The screen displays the progress of the student with the date and time of completion.
+	 * Output: The screen displays the progress of the student with the date and time of completion.
 
 * Input 3: Pressing the Start Lesson button (User)
- * Output: The app will display the Back and Listen buttons and start a new lesson.
+ 	* Output: The app will display the Back and Listen buttons and start a new lesson.
 
 * Input 4: Pressing the Resume Lesson button (User)
- * Output: The screen will display the Back and Listen buttons and continue the previous lesson.
+ 	* Output: The screen will display the Back and Listen buttons and continue the previous lesson.
 
 * Input 5: Pressing the Update Lesson button (Developing Team)
- * Output: The team will be able to add new Lessons the the Lessons Plans list, allowing the user to see the new lessons when they enter the app or refresh the page. 
+ 	* Output: The team will be able to add new Lessons the the Lessons Plans list, allowing the user to see the new lessons when they enter the app or refresh the page. 
 
 * Input 6: Pressing the Listen button (User)
- * Output: The app will play the audio and the screen will display the drawing pad as well as the Back and Submit button.
+ 	* Output: The app will play the audio and the screen will display the drawing pad as well as the Back and Submit button.
 
 * Input 7: Pressing the Back button (User)
- * Output: If pressed before the Listen Button, the screen displays Start New Lesson, Resume Lesson and View Lesson History buttons
+	* Output: If pressed before the Listen Button, the screen displays Start New Lesson, Resume Lesson and View Lesson History buttons
     else, The app will display the Back and Listen buttons, allowing the User to replay the audio.
 
 * Input 8: Drawing in the answer (User)
- * Output: the app will wait for the user to press the Submit Button
+	* Output: the app will wait for the user to press the Submit Button
 
 * Input 9: Pressing the Submit button (User)
- * Output: If the answer is correct but it is not the end of the lesson, the screen will display ”Correct”,  and return to the screen that will display the Back and Listen buttons to receive a new assignment.
+	* Output: If the answer is correct but it is not the end of the lesson, the screen will display ”Correct”,  and return to the screen that will display the Back and Listen buttons to receive a new assignment.
 
  If the answer is incorrect but it is not the end of the lesson, the screen will display ”Incorrect”,  and return to the screen that will display the Back and Listen buttons to retry the assignment.
 
