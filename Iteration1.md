@@ -3,14 +3,14 @@
 # Exciting Features and Implementation
 
 * Update lesson list
- * Description: User will have the option to view the updated master lesson list and 
+ 	* Description: User will have the option to view the updated master lesson list and 
 choose which lesson set they would like to start/resume from there. The new lessons would be added from our backend, users would not be able to create their own lesson set to be added to the master one. 
- * Implementation start: After iteration 3
+ 	* Implementation start: After iteration 3
 
 * View lesson history
- * Description: Users will be able to see their past complete lessons, each past 
+ 	* Description: Users will be able to see their past complete lessons, each past 
 lesson slot with display date of when the user ended and time it took to complete the lesson. 
- * Implementation start: In iteration 3 
+ 	* Implementation start: In iteration 3 
 
 * Audio
  * Description: User will be able to hear, in each lesson, letters, shapes and words to be able to draw what he or she is just heard. 
