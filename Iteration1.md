@@ -78,7 +78,7 @@ Which eliminates the need to download multiple apps and frees up space on the Us
   * Risk Exposure: 60% * 3hr = 1.8hr
   * Solution: The team will each write down their schedule to have a clear view of when every member is free to accurately schedule a meeting. The will be implemented immediately. 
 
-# Input and Outputs
+# Planned Input and Outputs
 
 * Input 1: Choosing a Lesson Plan (User)
   
@@ -120,6 +120,14 @@ Which eliminates the need to download multiple apps and frees up space on the Us
  If the answer is incorrect but it is not the end of the lesson, the screen will display ”Incorrect”,  and return to the screen that will display the Back and Listen buttons to retry the assignment.
 
  If the answer is correct and is the end of the lesson, the screen will display ”Correct”, and then a congratulation message.
+ 
+# Each Implemented Feature's Screenshot after Iteration 1
+
+* Drawing pad
+
+* Audio recognition
+
+* Letter/Number Recognition
 
 # Addressing Questions from the Review Team
 
