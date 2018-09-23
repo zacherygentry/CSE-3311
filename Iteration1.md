@@ -1,4 +1,4 @@
-#  Iteration 1: edU
+#  edU: Iteration 1
 
 # Exciting Features and Implementation
 
