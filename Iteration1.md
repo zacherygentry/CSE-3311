@@ -125,9 +125,36 @@ Which eliminates the need to download multiple apps and frees up space on the Us
 
 * Drawing pad
 
-* Audio recognition
+  !['drawing pad'](https://github.com/zacherygentry/CSE-3311/blob/master/edU%20UI%20canvas.png?raw=true "Drawing Pad")
+
+* Save Drawing for Submission
+
+  !['submit'](https://github.com/zacherygentry/CSE-3311/blob/master/edU%20UI%20screenshot.png?raw=true "Save Drawing")
+
+* Audio
+
+  Not yet implemented
 
 * Letter/Number Recognition
+
+  Not yet implemented. We are having compatability issues with React Native and OpenCV.
+  
+# Code Screenshot
+
+TODO: Insert screenshot of code here
+  
+# Compiling app and Running
+
+  1. Download and install Node
+  2. Git clone this repository
+  3. cd into 'edu' folder
+  4. Run `npm install` to install node modules for our project.
+  5. Download react-native CLI.
+  6. For macOS, make sure you have either a working version of an Android simulator or iPhone simulator.
+  7. For Windows, make sure you have a working version of Android simulator.
+  8. Run `react-native run-ios` or `react-native run-android`
+  9. The simulator should start running, install the app, and run it.
+  10. You should be able to draw on the canvas, undo previous drawing, clear the canvas screen, and save the drawing, indicated at bottom of the screen.
 
 # Addressing Questions from the Review Team
 
