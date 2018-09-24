@@ -6,21 +6,35 @@ import {
   Image
 } from 'react-native';
 import RNSketchCanvas from '@terrylinla/react-native-sketch-canvas';
-// Imports the Google Cloud client library
+import RNTesseractOcr from 'react-native-tesseract-ocr';
 
 export default class example extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       result: false,
-      path: "f"
+      text: "Hello"
     };
   }
 
   render() {
 
-    const imageSaved = (result, path) => {
-      this.setState({ path: path })
+    const tessOptions = {
+      whitelist: null,
+      blacklist: '1234567890\'!"#$%&/()={}[]+*-_:;<>'
+    };
+
+    const process = (imgPath, lang, tessOptions) => {
+      RNTesseractOcr.recognize(imgPath, lang, tessOptions)
+        .then((result) => {
+          this.setState({ text: result });
+          console.log("OCR Result: ", result);
+        })
+        .catch((err) => {
+          this.setState({ text: "ERROR" });
+          console.log("OCR Error: ", err);
+        })
+        .done();
     }
 
     return (
@@ -42,13 +56,14 @@ export default class example extends React.Component {
                 imageType: 'png'
               }
             }}
-            onSketchSaved={(result, path) => imageSaved(result, path)}>
+            onSketchSaved={(result, path) => this.setState({path: path})}>
 
           </RNSketchCanvas>
         </View>
-        <Image style={{ width: 50, height: 50 }}
-          source={{ uri: this.state.path }} />
-
+        <Image
+          style={{ width: 100, height: 200 }}
+          source={{ uri: this.state.path }}
+        />
       </View>
     );
   }

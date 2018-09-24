@@ -9,7 +9,9 @@
   "dependencies": {
     "@terrylinla/react-native-sketch-canvas": "^0.8.0",
     "react": "16.5.0",
-    "react-native": "0.57.1"
+    "react-native": "0.57.1",
+    "react-native-sound": "^0.10.9",
+    "react-native-tesseract-ocr": "^1.0.10"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
