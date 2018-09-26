@@ -72,6 +72,7 @@ We are creating a multi-platform mobile app which focuses on image recognition c
 * Node.js
 * SQLite
 * openCVL
+* Amazon Recognition (AWS)
 
 ## People
 Targets kids age 2+
