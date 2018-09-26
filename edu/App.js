@@ -17,7 +17,7 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      path: "Image goes here"
+      path: null
     };
   }
 
@@ -51,7 +51,7 @@ export default class App extends React.Component {
         </View>
         <Image
           style={{ width: 100, height: 200 }}
-          source={{ uri: this.state.path }}
+          source={{ uri: "file://" + this.state.path }}
         />
       </View>
     );
