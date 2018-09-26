@@ -1,86 +1,73 @@
-import React from 'react';
-import { StyleSheet, Text, View, Dimensions, TouchableHighlight } from 'react-native';
-import { Svg } from 'expo';
-const { Circle, Rect } = Svg;
-import RNDraw from 'rn-draw';
+/////////////
+// IMPORTS //
+/////////////
+import React, { Component } from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image
+} from 'react-native';
+import RNSketchCanvas from '@terrylinla/react-native-sketch-canvas';
 
-// Percentages work in plain react-native but aren't supported in Expo yet, workaround with this or onLayout
-const { width, height } = Dimensions.get('window');
 
-export default class SvgExample extends React.Component {
+// Start of our application
+export default class App extends React.Component {
+  // Constructor. We set the intitial state here.
+  constructor(props) {
+    super(props);
+    this.state = {
+      path: "Image goes here"
+    };
+  }
+
   render() {
-
-    clear = () => {
-
-    }
-
+    // This is what will be rendered to the screen 
     return (
       <View style={styles.container}>
-        <RNDraw
-          containerStyle={{ backgroundColor: 'rgba(0,0,0,0.01)' }}
-          rewind={(undo) => { this._undo = undo }}
-          clear={(clear) => { this._clear = clear }}
-          color='#000000'
-          strokeWidth={4}>
-        </RNDraw>
-        <View style={styles.footer}>
-          <TouchableHighlight
-            style={styles.button}
-            onPress={() => this._undo()}
-          >
-            <Text style={styles.text}> Undo </Text>
-          </TouchableHighlight>
 
-          <TouchableHighlight
-            style={styles.button}
-            onPress={() => this._clear()}
-          >
-            <Text style={styles.text}> Clear Screen </Text>
-          </TouchableHighlight>
-
-          <TouchableHighlight
-            style={styles.button}
-            //onPress={() => submit}
-          >
-            <Text style={styles.text}> Submit </Text>
-          </TouchableHighlight>
+        {/* View wrapper for our canvas. Takes up as much room as possible.*/}
+        <View style={{ flex: 1, flexDirection: 'row' }}>
+          {/* Drawing canvas, the undo, clear, and save functionalities are nested in here as components.
+           /* onSketchSaved prop returns the path of saved image. */}
+          <RNSketchCanvas
+            containerStyle={{ backgroundColor: 'transparent', flex: 1 }}
+            canvasStyle={{ backgroundColor: 'transparent', flex: 1 }}
+            defaultStrokeIndex={0}
+            defaultStrokeWidth={5}
+            undoComponent={<View style={styles.functionButton}><Text style={{ color: 'white' }}>Undo</Text></View>}
+            clearComponent={<View style={styles.functionButton}><Text style={{ color: 'white' }}>Clear</Text></View>}
+            saveComponent={<View style={styles.functionButton}><Text style={{ color: 'white' }}>Save</Text></View>}
+            savePreference={() => {
+              return {
+                folder: 'RNSketchCanvas',
+                filename: String(Math.ceil(Math.random() * 100000000)),
+                transparent: false,
+                imageType: 'png'
+              }
+            }}
+            onSketchSaved={(result, path) => this.setState({ path: path })}>
+          </RNSketchCanvas>
         </View>
+        <Image
+          style={{ width: 100, height: 200 }}
+          source={{ uri: this.state.path }}
+        />
       </View>
     );
   }
 }
 
+
+/////////////////////
+/// S T Y L I N G ///
+/////////////////////
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    width: '100%',
-    height: '100%',
-    backgroundColor: 'rgba(0,0,0,0.01)'
+    flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#F5FCFF',
   },
-  undo: {
-    backgroundColor: '#3498db',
-    marginLeft: '15%',
-    marginBottom: '7%',
-    padding: 10,
-  },
-  clear: {
-    backgroundColor: '#3498db',
-    marginRight: '15%',
-    marginBottom: '7%',
-    padding: 10,
-  },
-  button: {
-    backgroundColor: '#3498db',
-    padding: 10,
-    marginBottom: '10%'
-  },
-  text: {
-    color: '#ffffff',
-  },
-  footer: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
+  functionButton: {
+    marginHorizontal: 2.5, marginVertical: 8, height: 30, width: 60,
+    backgroundColor: '#39579A', justifyContent: 'center', alignItems: 'center', borderRadius: 5,
   }
 });
-
