@@ -1,3 +1,6 @@
+/////////////
+// IMPORTS //
+/////////////
 import React, { Component } from 'react';
 import {
   StyleSheet,
@@ -6,40 +9,27 @@ import {
   Image
 } from 'react-native';
 import RNSketchCanvas from '@terrylinla/react-native-sketch-canvas';
-import RNTesseractOcr from 'react-native-tesseract-ocr';
 
-export default class example extends React.Component {
+
+// Start of our application
+export default class App extends React.Component {
+  // Constructor. We set the intitial state here.
   constructor(props) {
     super(props);
     this.state = {
-      result: false,
-      text: "Hello"
+      path: "Image goes here"
     };
   }
 
   render() {
-
-    const tessOptions = {
-      whitelist: null,
-      blacklist: '1234567890\'!"#$%&/()={}[]+*-_:;<>'
-    };
-
-    const process = (imgPath, lang, tessOptions) => {
-      RNTesseractOcr.recognize(imgPath, lang, tessOptions)
-        .then((result) => {
-          this.setState({ text: result });
-          console.log("OCR Result: ", result);
-        })
-        .catch((err) => {
-          this.setState({ text: "ERROR" });
-          console.log("OCR Error: ", err);
-        })
-        .done();
-    }
-
+    // This is what will be rendered to the screen 
     return (
       <View style={styles.container}>
+
+        {/* View wrapper for our canvas. Takes up as much room as possible.*/}
         <View style={{ flex: 1, flexDirection: 'row' }}>
+          {/* Drawing canvas, the undo, clear, and save functionalities are nested in here as components.
+           /* onSketchSaved prop returns the path of saved image. */}
           <RNSketchCanvas
             containerStyle={{ backgroundColor: 'transparent', flex: 1 }}
             canvasStyle={{ backgroundColor: 'transparent', flex: 1 }}
@@ -56,8 +46,7 @@ export default class example extends React.Component {
                 imageType: 'png'
               }
             }}
-            onSketchSaved={(result, path) => this.setState({path: path})}>
-
+            onSketchSaved={(result, path) => this.setState({ path: path })}>
           </RNSketchCanvas>
         </View>
         <Image
@@ -69,6 +58,10 @@ export default class example extends React.Component {
   }
 }
 
+
+/////////////////////
+/// S T Y L I N G ///
+/////////////////////
 const styles = StyleSheet.create({
   container: {
     flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#F5FCFF',
