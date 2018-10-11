@@ -10,6 +10,7 @@ Cross-platform educational app that helps kids learn spelling and shapes.
 * SQLite
 * openCV
 * Amazon Rekognition 
+* Xcode 
 
 # Tesseract and OpenCV resources
 https://www.learnopencv.com/deep-learning-based-text-recognition-ocr-using-tesseract-and-opencv/
