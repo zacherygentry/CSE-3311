@@ -125,11 +125,11 @@ Which eliminates the need to download multiple apps and frees up space on the Us
 
 * Drawing pad
 
-  !['drawing pad'](https://github.com/zacherygentry/CSE-3311/blob/master/edU%20UI%20canvas.png?raw=true "Drawing Pad")
+  !['drawing pad'](https://github.com/zacherygentry/CSE-3311/blob/master/Images/canvas.png "Drawing Pad")
 
 * Save Drawing for Submission
 
-  !['submit'](https://github.com/zacherygentry/CSE-3311/blob/master/edU%20UI%20screenshot.png?raw=true "Save Drawing")
+  !['submit'](https://github.com/zacherygentry/CSE-3311/blob/master/Images/screenshot.png "Save Drawing")
 
 * Audio
 
@@ -141,7 +141,7 @@ Which eliminates the need to download multiple apps and frees up space on the Us
   
 # Code Screenshot
 
-TODO: Insert screenshot of code here
+  !['code'](https://github.com/zacherygentry/CSE-3311/blob/master/Images/code.png "Code Screenshot")
   
 # Compiling app and Running
 
