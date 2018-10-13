@@ -43,8 +43,15 @@
 
 * Difficulty level
   * Main Success Scenario
-    1. The User will choose a dificulty level.
+    1. The User will choose a difficulty level.
     2. The System will display the lessons according to difficulty.
+    
+# Emphasis on New Risk
+  
+* Risk: The team will be changing there platform from React Native to Native IOS. 
+* Reason: React Native was becoming very difficult to manipulate. The system would crash with minor changes causing the team to have to delete the old cache just to have the app compile succesfully.  More time was spent getting the app to compile then actual coding, which significantly slowed down productivity and increased team 5's Risk Exposer of Risk 4 (Short duration to develop the full vision of the app).
+* Risk Exposure: RE = 100% * 12hr = 12hr
+* Solution: The team will split up the work among the members, fully commiting to a few aspects of the previous iteration, to increase the success of transferal.
     
 # Exciting Features and Implementation
 
@@ -82,7 +89,7 @@ lesson slot with display date of when the user ended and time it took to complet
   * Description: User in each lesson set will be able to select which level, beginner, intermediate, or hard they would like to learn. Each user has the option to start off whatever they feel they would like to start on. The app doesn’t limit options for users based on grade level. 
   * Implementation start: 3
 
-# Competitors and How edU differs
+# Competitors and How edU Differs
 
 * PocketPhonics
 * Is a learning app, that encourages the child to explore the alphabet by tracing the image of the letter. They also have an option of choosing the letter after hearing the corresponding audio.
@@ -102,7 +109,7 @@ Which eliminates the need to download multiple apps and frees up space on the Us
 
 * Reason 4: edU ranges in terms of difficulty levels. Other competitors have a smaller age range, whereas, edU ages range from 2 and up.
 
-# The Five Top Risk
+# The Six Top Risk
 
 * Risk 1:    Each team member are beginners in App Development.
   * Risk Exposure: RE = 90% * 10hr = 9hr
@@ -112,7 +119,7 @@ Which eliminates the need to download multiple apps and frees up space on the Us
   * Risk Exposure: RE = 90% * 9hr = 8.1hr
   * Solution: Since the app is geared towards a younger audience, the team will use fun, bright colors and images to keep the student captivated and engaged. This will be implemented after the major requirements have been implemented.
 
-* Risk 3:    The team is is switching platforms to Native IOS because React Native is unpredictable and crashes easily..
+* Risk 3:    The team is is switching platforms to Native IOS because React Native is unpredictable and crashes easily.
   * Risk Exposure: RE = 100% * 12hr = 12hr
   * Solution: The team will split up the work among the members to increase the success of transferal.
   
