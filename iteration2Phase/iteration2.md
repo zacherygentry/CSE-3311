@@ -65,24 +65,24 @@ Which eliminates the need to download multiple apps and frees up space on the Us
 * Solution: The team will engage in intensive training and research to gain knowledge in app development. This will be implemented immediately prior to coding.
 
 * Risk 2:    Making the app visually appealing to a younger audience.
-* Risk Exposure: RE = 90% * 9hr = 8.1hr
-* Solution: Since the app is geared towards a younger audience, the team will use fun, bright colors and images to keep the student captivated and engaged. This will be implemented after the major requirements have been implemented.
+  * Risk Exposure: RE = 90% * 9hr = 8.1hr
+  * Solution: Since the app is geared towards a younger audience, the team will use fun, bright colors and images to keep the student captivated and engaged. This will be implemented after the major requirements have been implemented.
 
 * Risk 3:    The team is is switching platforms to Native IOS because React Native is unpredictable and crashes easily..
-* Risk Exposure: RE = 100% * 12hr = 12hr
-* Solution: The team will split up the work among the members to increase the success of transferal.
+  * Risk Exposure: RE = 100% * 12hr = 12hr
+  * Solution: The team will split up the work among the members to increase the success of transferal.
   
 * Risk 4:    Short duration to develop the full vision of the app.
-* Risk Exposure: RE = 60% * 5hr = 3hr
-* Solution: The team will remove as many requirements as possible while still maintaining the integrity of the app. This will be implemented in iteration 3.
+  * Risk Exposure: RE = 60% * 5hr = 3hr
+  * Solution: The team will remove as many requirements as possible while still maintaining the integrity of the app. This will be implemented in iteration 3.
 
 * Risk 5:    A few team members have busy schedules, making frequent meetings difficult.
-* Risk Exposure: 60% * 3hr = 1.8hr
-* Solution: The team will each write down their schedule to have a clear view of when every member is free to accurately schedule a meeting. The will be implemented immediately. 
+  * Risk Exposure: 60% * 3hr = 1.8hr
+  * Solution: The team will each write down their schedule to have a clear view of when every member is free to accurately schedule a meeting. The will be implemented immediately. 
 
 * Risk 6:    The team will be using Xcode which is for Mac user only. One member of the team doesn’t own a MAC computer.
-* Risk Exposure: 25% * 6hr = 1.5hr
-* Solution: The team will allow that member to work alongside them, as well as, complete the design work and documentation.
+  * Risk Exposure: 25% * 6hr = 1.5hr
+  * Solution: The team will allow that member to work alongside them, as well as, complete the design work and documentation.
 
 
 # Planned Input and Outputs
