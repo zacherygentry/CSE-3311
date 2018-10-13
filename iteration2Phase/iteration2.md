@@ -51,7 +51,7 @@
 * Risk: The team will be changing there platform from React Native to Native IOS. 
 * Reason: React Native was becoming very difficult to manipulate. The system would crash with minor changes causing the team to have to delete the old cache just to have the app compile succesfully.  More time was spent getting the app to compile then actual coding, which significantly slowed down productivity and increased team 5's Risk Exposer of Risk 4 (Short duration to develop the full vision of the app).
 * Risk Exposure: RE = 100% * 12hr = 12hr
-* Solution: The team will split up the work among the members, fully commiting to a few aspects of the previous iteration, to increase the success of transferal.
+* Solution: The team will split up the work among the members, fully commiting to a few aspects of the previous iteration, to increase the success of transferral.
     
 # Exciting Features and Implementation
 
@@ -121,7 +121,7 @@ Which eliminates the need to download multiple apps and frees up space on the Us
 
 * Risk 3:    The team is is switching platforms to Native IOS because React Native is unpredictable and crashes easily.
   * Risk Exposure: RE = 100% * 12hr = 12hr
-  * Solution: The team will split up the work among the members to increase the success of transferal.
+  * Solution: The team will split up the work among the members to increase the success of transferral.
   
 * Risk 4:    Short duration to develop the full vision of the app.
   * Risk Exposure: RE = 60% * 5hr = 3hr
