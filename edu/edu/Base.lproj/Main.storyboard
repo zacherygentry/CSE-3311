@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,7 +12,6 @@
         <!--View Controller-->
         <scene sceneID="F3s-0N-9De">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zLn-Zv-lFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="zk2-rS-aO2" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="icx-Ar-sf3"/>
@@ -83,6 +81,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="UbF-5j-K5K"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zLn-Zv-lFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1348" y="144.3778110944528"/>
         </scene>
