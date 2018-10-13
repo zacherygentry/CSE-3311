@@ -2,41 +2,53 @@
 
 # Use Cases: Main Success Scenarios and Extensions
 
+* Update lesson list
+ * Main Success Scenario
+ 1. 
+
+* View lesson history
+
+* Audio
+
+* Drawing pad
+
+* Difficulty levels
+
 # Exciting Features and Implementation
 
 * Update lesson list
-* Description: User will have the option to view the updated master lesson list and 
+ * Description: User will have the option to view the updated master lesson list and 
 choose which lesson set they would like to start/resume from there. The new lessons would be added from our backend, users would not be able to create their own lesson set to be added to the master one. 
-* Implementation start: 3
+ * Implementation start: 3
 
 * View lesson history
-* Description: Users will be able to see their past complete lessons, each past 
+ * Description: Users will be able to see their past complete lessons, each past 
 lesson slot with display date of when the user ended and time it took to complete the lesson. 
-* Implementation start: 3
+ * Implementation start: 3
 
 * Audio
-* Description: User will be able to hear, in each lesson, letters, shapes and words to be able to draw what he or she is just heard. 
-* Implementation start: 3
+ * Description: User will be able to hear, in each lesson, letters, shapes and words to be able to draw what he or she is just heard. 
+ * Implementation start: 3
 
 * Drawing pad
-* Description: User will be able to draw on the app what they heard in each lesson.
-* Implementation start: 1
+ * Description: User will be able to draw on the app what they heard in each lesson.
+ * Implementation start: 1
 
 * Shape recognition
-* Description: Application will be able to recognize shapes after user submits their drawing. 
-* Implementation start: ?
+ * Description: Application will be able to recognize shapes after user submits their drawing. 
+ * Implementation start: ?
 
 * Letter recognition
-* Description: Application will be able to recognize letters after user submits their drawing.
-* Implementation start: 1
+ * Description: Application will be able to recognize letters after user submits their drawing.
+ * Implementation start: 1
 
 * Number recognition
-* Description: Application will be able to recognize letters after user submits their drawing.
-* Implementation start: 1
+ * Description: Application will be able to recognize letters after user submits their drawing.
+ * Implementation start: 1
 
 * Difficulty levels
-* Description: User in each lesson set will be able to select which level, beginner, intermediate, or hard they would like to learn. Each user has the option to start off whatever they feel they would like to start on. The app doesn’t limit options for users based on grade level. 
-* Implementation start: 3
+ * Description: User in each lesson set will be able to select which level, beginner, intermediate, or hard they would like to learn. Each user has the option to start off whatever they feel they would like to start on. The app doesn’t limit options for users based on grade level. 
+ * Implementation start: 3
 
 # Competitors and How edU differs
 
@@ -61,8 +73,8 @@ Which eliminates the need to download multiple apps and frees up space on the Us
 # The Five Top Risk
 
 * Risk 1:    Each team member are beginners in App Development.
-* Risk Exposure: RE = 90% * 10hr = 9hr
-* Solution: The team will engage in intensive training and research to gain knowledge in app development. This will be implemented immediately prior to coding.
+ * Risk Exposure: RE = 90% * 10hr = 9hr
+ * Solution: The team will engage in intensive training and research to gain knowledge in app development. This will be implemented immediately prior to coding.
 
 * Risk 2:    Making the app visually appealing to a younger audience.
   * Risk Exposure: RE = 90% * 9hr = 8.1hr
