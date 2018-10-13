@@ -2,18 +2,50 @@
 
 # Use Cases: Main Success Scenarios and Extensions
 
+* Use drawing pad
+  * Main Success Scenario
+    1. The user is prompted to draw an letter, number or shape for validation.
+    2. The User draws the image on the drawing pad
+  	 3. The User submits the drawing.
+    4. The System takes a screenshot
+    5. The System validates the image.
+    6. The System displays a message:
+       * Correct!
+       * Incorrect! Try Again!
+       * Congrats!
+  * Extension
+    1. User draws a incoherent image or draws nothing when submiting an image.
+       * The System will display the "incorrect! Try Again!" message
+       * The System will start back at step a.
+       
 * Update lesson list
   * Main Success Scenario
-    1. 
+    1. The Team will add problems to a lesson
+    2. The Team will add the audio to the lesson
+    3. The team will submit the new lesson
+  * Extension
+    1. The Team adds an unwanted lesson
+    2. The team adds audio not corresponding to the problem
+    
+* Audio
+  * Main Success Scenario
+    1. The User pushes a Lesson and is prompted to listen to the presented audio.
+    2. The System plays the audio.
+    3. The user listen to the presented audio.
+  * Extension
+    1. The User misses the Audio
+       * The System will do nothing but the User will push the replay audio icon
 
 * View lesson history
+  * Main Success Scenario
+    1. The User will push the View History button.
+    2. The System will display the User lesson plan history.
 
-* Audio
-
-* Drawing pad
-
-* Difficulty levels
-
+* Difficulty level
+  * Main Success Scenario
+    1. The User will choose a dificulty level.
+    2. The System will display the lessons according to difficulty.
+    
 # Exciting Features and Implementation
 
 * Update lesson list
