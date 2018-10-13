@@ -1,24 +1,26 @@
 #  edU: Iteration 2
 
+# Use Cases: Main Success Scenarios and Extensions
+
 # Exciting Features and Implementation
 
 * Update lesson list
 * Description: User will have the option to view the updated master lesson list and 
 choose which lesson set they would like to start/resume from there. The new lessons would be added from our backend, users would not be able to create their own lesson set to be added to the master one. 
-* Implementation start: ?
+* Implementation start: 3
 
 * View lesson history
 * Description: Users will be able to see their past complete lessons, each past 
 lesson slot with display date of when the user ended and time it took to complete the lesson. 
-* Implementation start: ?
+* Implementation start: 3
 
 * Audio
 * Description: User will be able to hear, in each lesson, letters, shapes and words to be able to draw what he or she is just heard. 
-* Implementation start: ?
+* Implementation start: 3
 
 * Drawing pad
 * Description: User will be able to draw on the app what they heard in each lesson.
-* Implementation start: ?
+* Implementation start: 1
 
 * Shape recognition
 * Description: Application will be able to recognize shapes after user submits their drawing. 
@@ -26,15 +28,15 @@ lesson slot with display date of when the user ended and time it took to complet
 
 * Letter recognition
 * Description: Application will be able to recognize letters after user submits their drawing.
-* Implementation start: ?
+* Implementation start: 1
 
 * Number recognition
 * Description: Application will be able to recognize letters after user submits their drawing.
-* Implementation start: ?
+* Implementation start: 1
 
 * Difficulty levels
 * Description: User in each lesson set will be able to select which level, beginner, intermediate, or hard they would like to learn. Each user has the option to start off whatever they feel they would like to start on. The app doesn’t limit options for users based on grade level. 
-* Implementation start: ?
+* Implementation start: 3
 
 # Competitors and How edU differs
 
@@ -50,7 +52,7 @@ How edU differs
 * Reason 1: edU combines a greater range of exercises: numbers, letters, simple spelling, shapes and math. 
 Which eliminates the need to download multiple apps and frees up space on the Users phone.
 
-* Reason 2: 
+* Reason 2: edU uses Amazon Rekognition API to apply text and image recognition, eliminating the need for tracing over a preshown object. This allows creativity and the chance to execute their own unique writing styles.
 
 * Reason 3: edU will allow the developer to upgrade lessons and increase the contents of the database. Unlike the other competitors, edU evolves over time, incorporating new and exciting features.
 
@@ -66,8 +68,10 @@ Which eliminates the need to download multiple apps and frees up space on the Us
 * Risk Exposure: RE = 90% * 9hr = 8.1hr
 * Solution: Since the app is geared towards a younger audience, the team will use fun, bright colors and images to keep the student captivated and engaged. This will be implemented after the major requirements have been implemented.
 
-* Risk 3:    
-
+* Risk 3:    The team is is switching platforms to Native IOS because React Native is unpredictable and crashes easily..
+* Risk Exposure: RE = 100% * 12hr = 12hr
+* Solution: The team will split up the work among the members to increase the success of transferal.
+  
 * Risk 4:    Short duration to develop the full vision of the app.
 * Risk Exposure: RE = 60% * 5hr = 3hr
 * Solution: The team will remove as many requirements as possible while still maintaining the integrity of the app. This will be implemented in iteration 3.
@@ -75,6 +79,11 @@ Which eliminates the need to download multiple apps and frees up space on the Us
 * Risk 5:    A few team members have busy schedules, making frequent meetings difficult.
 * Risk Exposure: 60% * 3hr = 1.8hr
 * Solution: The team will each write down their schedule to have a clear view of when every member is free to accurately schedule a meeting. The will be implemented immediately. 
+
+* Risk 6:    The team will be using Xcode which is for Mac user only. One member of the team doesn’t own a MAC computer.
+* Risk Exposure: 25% * 6hr = 1.5hr
+* Solution: The team will allow that member to work alongside them, as well as, complete the design work and documentation.
+
 
 # Planned Input and Outputs
 
@@ -160,7 +169,6 @@ If the answer is correct and is the end of the lesson, the screen will display �
 
 
 * Question 3: It seems the application relies heavily on network connectivity. What happen if user loses the connection while using the app. Will they be able to continue working on the drawing and save their progress data on local devices (caching)?
-
 
 
 
