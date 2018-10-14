@@ -212,17 +212,13 @@ If the answer is correct and is the end of the lesson, the screen will display â
 # Addressing Questions from the Review Team
 
 * Question 1: I know login was stated to not be included but is there any type of way users to keep track of user data when first using the app? For example, what if user breaks phone and gets a replacement, would they have to start over?
-
-
+  * Yes, they would. But, it will allow the user to review previous lessons and in turn furthur increase their learning capacity. But they don't have to start at Lesson 1 to get to Lesson n. They can just go straight to the lesson they last completed.
 
 * Question 2: It is stated that the user will hear the lesson plan to know whatâ€™s the goal, will the screen have a button to press to show it visually on screen in text in case user has phone speaker problems?
-
-
+  * The team will have a Lesson zero. This lesson will show all the images needed to learn the material. Once the User feels comfortable, they can move on to the other lessons. If they are having trouble, the User can always go back to Lesson 0.
 
 * Question 3: It seems the application relies heavily on network connectivity. What happen if user loses the connection while using the app. Will they be able to continue working on the drawing and save their progress data on local devices (caching)?
-
-
+  * 
 
 * Question 4: If you guys are deploying the app on app store/google play, how will the cost of the API will be handled ? Because after certain time amazon's free tier ends, and amazon charges money for the usage of AWS.
-
-
+  * 
