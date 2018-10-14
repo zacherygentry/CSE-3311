@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NIc-sM-P5H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NIc-sM-P5H">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -135,7 +135,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description of what is in this Lesson Plan set..." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SpW-er-zbR">
-                                <rect key="frame" x="22" y="114" width="330" height="56"/>
+                                <rect key="frame" x="22" y="114" width="331" height="56"/>
                                 <color key="backgroundColor" red="0.37354658155622417" green="0.97680455450000003" blue="0.69576361554003863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.19638882838558092" green="0.26534739847715738" blue="0.092684281497051324" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -405,7 +405,7 @@
         <!--View Controller-->
         <scene sceneID="qVu-6b-z6m">
             <objects>
-                <viewController id="ZTZ-rl-B1A" sceneMemberID="viewController">
+                <viewController id="ZTZ-rl-B1A" customClass="ViewController" customModule="edU" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9lJ-Lv-bv1"/>
                         <viewControllerLayoutGuide type="bottom" id="HMm-9N-uhk"/>
@@ -415,29 +415,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXR-1g-XeA">
-                                <rect key="frame" x="69" y="577" width="39" height="40"/>
+                                <rect key="frame" x="16" y="619" width="39" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="backButton"/>
                                 <connections>
                                     <segue destination="NV4-7j-A3Z" kind="show" id="N4X-IM-f6A"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXe-16-a46">
-                                <rect key="frame" x="189" y="575" width="121" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXe-16-a46" userLabel="Submit">
+                                <rect key="frame" x="238" y="617" width="121" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="submit"/>
+                                <connections>
+                                    <action selector="submitImage:" destination="ZTZ-rl-B1A" eventType="touchUpInside" id="Bn8-oC-9q7"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lUv-Md-9Ui">
-                                <rect key="frame" x="67" y="114" width="240" height="128"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6b6-Mr-nIH" customClass="SketchView" customModule="Sketch">
+                                <rect key="frame" x="21" y="72" width="338" height="338"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udp-wA-Ogg">
+                                <rect key="frame" x="104" y="418" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearCanvas:" destination="ZTZ-rl-B1A" eventType="touchUpInside" id="ILt-gv-lzz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Why-8C-ImF">
+                                <rect key="frame" x="21" y="418" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Undo"/>
+                                <connections>
+                                    <action selector="undoDraw:" destination="ZTZ-rl-B1A" eventType="touchUpInside" id="26z-qG-PNY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtE-tF-mck">
+                                <rect key="frame" x="16" y="456" width="343" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="NtE-tF-mck" id="qUg-Qi-9dc"/>
+                        <outlet property="sketchView" destination="6b6-Mr-nIH" id="HZa-jn-5c1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zD1-Qg-WxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4705" y="-928"/>
+            <point key="canvasLocation" x="4704.8000000000002" y="-928.78560719640188"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KW3-UZ-EN4">
@@ -515,21 +546,21 @@
     <resources>
         <image name="CircleButtonApp-1" width="160" height="136"/>
         <image name="Cloudbackgroundbutton-1" width="309" height="116"/>
-        <image name="Incorrect" width="294" height="102"/>
-        <image name="Listen" width="294" height="102"/>
-        <image name="backButton" width="38" height="39"/>
-        <image name="congrats" width="294" height="102"/>
-        <image name="correct" width="294" height="102"/>
-        <image name="lesson1" width="176" height="50"/>
-        <image name="lesson2" width="176" height="50"/>
-        <image name="lesson3" width="176" height="50"/>
-        <image name="lessonPlan" width="336" height="638"/>
-        <image name="lessonX" width="344" height="639"/>
-        <image name="resumeLesson" width="183" height="66"/>
-        <image name="startLesson" width="183" height="66"/>
-        <image name="submit" width="217" height="75"/>
-        <image name="viewHist" width="183" height="66"/>
-        <image name="viewHistoryWithOpaque" width="334" height="638"/>
+        <image name="Incorrect" width="220.5" height="76.5"/>
+        <image name="Listen" width="220.5" height="76.5"/>
+        <image name="backButton" width="28.5" height="29.25"/>
+        <image name="congrats" width="220.5" height="76.5"/>
+        <image name="correct" width="220.5" height="76.5"/>
+        <image name="lesson1" width="132" height="37.5"/>
+        <image name="lesson2" width="132" height="37.5"/>
+        <image name="lesson3" width="132" height="37.5"/>
+        <image name="lessonPlan" width="252" height="478.5"/>
+        <image name="lessonX" width="258" height="479.25"/>
+        <image name="resumeLesson" width="137.25" height="49.5"/>
+        <image name="startLesson" width="137.25" height="49.5"/>
+        <image name="submit" width="162.75" height="56.25"/>
+        <image name="viewHist" width="137.25" height="49.5"/>
+        <image name="viewHistoryWithOpaque" width="250.5" height="478.5"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="N4X-IM-f6A"/>

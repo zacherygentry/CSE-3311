@@ -7,19 +7,85 @@
 //
 
 import UIKit
+import Sketch
+import Firebase
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet var sketchView: SketchView!
+    @IBOutlet var label: UILabel!
+    
+    let vision = Vision.vision()
+    
+    @IBAction func submitImage(_ sender: Any) {
+        let textRecognizer = vision.onDeviceTextRecognizer()
+        let image = sketchView.asImage()
+        let vimage = VisionImage(image: image)
+        
+        textRecognizer.process(vimage) { result, error in
+            guard error == nil, let result = result else {
+                // ...
+                return
+            }
+            let resultText = result.text
+            for block in result.blocks {
+                let blockText = block.text
+                print(blockText)
+                let blockConfidence = block.confidence
+                let blockLanguages = block.recognizedLanguages
+                let blockCornerPoints = block.cornerPoints
+                let blockFrame = block.frame
+                for line in block.lines {
+                    let lineText = line.text
+                    let lineConfidence = line.confidence
+                    let lineLanguages = line.recognizedLanguages
+                    let lineCornerPoints = line.cornerPoints
+                    let lineFrame = line.frame
+                    for element in line.elements {
+                        let elementText = element.text
+                        let elementConfidence = element.confidence
+                        let elementLanguages = element.recognizedLanguages
+                        let elementCornerPoints = element.cornerPoints
+                        let elementFrame = element.frame
+                    }
+                }
+            }
+            self.label.text = resultText;
+        }
+    }
+    
+    
+    @IBAction func clearCanvas(_ sender: Any) {
+        sketchView.clear()
+    }
+    
+    @IBAction func undoDraw(_ sender: Any) {
+         sketchView.undo()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        sketchView.lineColor = UIColor.white
+        sketchView.backgroundColor = UIColor.black
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
 
-
+extension SketchView {
+    
+    // Using a function since `var image` might conflict with an existing variable
+    // (like on `UIImageView`)
+    func asImage() -> UIImage {
+        let renderer = UIGraphicsImageRenderer(bounds: bounds)
+        return renderer.image { rendererContext in
+            layer.render(in: rendererContext.cgContext)
+        }
+    }
 }
 
