@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>841694946428-rftuvchak084ivinvvmnch3r0qs8jd5t.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.841694946428-rftuvchak084ivinvvmnch3r0qs8jd5t</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDhaUnv-UiFrX7rFgCiZbfZLSuLmL4BEuY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>841694946428</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>UTA.edU</string>
+	<key>PROJECT_ID</key>
+	<string>edu-app-47a7b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>edu-app-47a7b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:841694946428:ios:c52555debf47f05a</string>
+	<key>DATABASE_URL</key>
+	<string>https://edu-app-47a7b.firebaseio.com</string>
+</dict>
+</plist>
