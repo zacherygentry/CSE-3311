@@ -218,7 +218,7 @@ If the answer is correct and is the end of the lesson, the screen will display â
   * The team will have a Lesson zero. This lesson will show all the images needed to learn the material. Once the User feels comfortable, they can move on to the other lessons. If they are having trouble, the User can always go back to Lesson 0.
 
 * Question 3: It seems the application relies heavily on network connectivity. What happen if user loses the connection while using the app. Will they be able to continue working on the drawing and save their progress data on local devices (caching)?
-  * 
+  * The app does not rely on network connectivity, everything is done locally in the app.
 
 * Question 4: If you guys are deploying the app on app store/google play, how will the cost of the API will be handled ? Because after certain time amazon's free tier ends, and amazon charges money for the usage of AWS.
-  * 
+  * The team has decided to use Firebase ML text recognition at the moment and it is free for the teams purposes.
