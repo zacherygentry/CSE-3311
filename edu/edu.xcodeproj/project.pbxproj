@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		268814E52187DFC6007CE449 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268814E42187DFC5007CE449 /* CoreML.framework */; };
 		268814E72187DFCC007CE449 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268814E62187DFCC007CE449 /* Vision.framework */; };
-		268814EA2187FEA2007CE449 /* ImageClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268814E92187FEA2007CE449 /* ImageClassificationViewController.swift */; };
 		268814EC2187FF25007CE449 /* HandwritingClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 268814EB2187FF25007CE449 /* HandwritingClassifier.mlmodel */; };
 		26A2CEE021731DD6009D6BE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A2CEDD21731DD6009D6BE2 /* AppDelegate.swift */; };
 		26A2CEE121731DD7009D6BE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26A2CEDE21731DD6009D6BE2 /* GoogleService-Info.plist */; };
@@ -45,7 +44,6 @@
 /* Begin PBXFileReference section */
 		268814E42187DFC5007CE449 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		268814E62187DFCC007CE449 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
-		268814E92187FEA2007CE449 /* ImageClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageClassificationViewController.swift; path = edu/ImageClassificationViewController.swift; sourceTree = SOURCE_ROOT; };
 		268814EB2187FF25007CE449 /* HandwritingClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = HandwritingClassifier.mlmodel; path = ../../../../../HandwritingClassifier.mlmodel; sourceTree = "<group>"; };
 		26A2CEDC21731DD6009D6BE2 /* edU-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "edU-Bridging-Header.h"; sourceTree = "<group>"; };
 		26A2CEDD21731DD6009D6BE2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = edu/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
@@ -161,7 +159,6 @@
 				26A2CEDE21731DD6009D6BE2 /* GoogleService-Info.plist */,
 				26A2CEDF21731DD6009D6BE2 /* ViewController.swift */,
 				A232798B216FDBD500A70E6D /* Main.storyboard */,
-				268814E92187FEA2007CE449 /* ImageClassificationViewController.swift */,
 				268814EB2187FF25007CE449 /* HandwritingClassifier.mlmodel */,
 				A2327990216FDBD500A70E6D /* LaunchScreen.storyboard */,
 				A2327993216FDBD500A70E6D /* Info.plist */,
@@ -454,7 +451,6 @@
 				26A2CEE221731DD7009D6BE2 /* ViewController.swift in Sources */,
 				268814EC2187FF25007CE449 /* HandwritingClassifier.mlmodel in Sources */,
 				26A2CEE021731DD6009D6BE2 /* AppDelegate.swift in Sources */,
-				268814EA2187FEA2007CE449 /* ImageClassificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
