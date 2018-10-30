@@ -23,41 +23,9 @@ class ViewController: UIViewController {
 //        options.languageHints = ["en"]
 //        let textRecognizer = vision.cloudTextRecognizer(options: options)
         let image = sketchView.asImage()
-        let vimage = VisionImage(image: image)
         UIImageWriteToSavedPhotosAlbum(image, self, nil, nil)
         
     }
-        
-//        textRecognizer.process(vimage) { result, error in
-//            guard error == nil, let result = result else {
-//                // ...
-//                return
-//            }
-//            print(result)
-//            let resultText = result.text
-//            for block in result.blocks {
-//                let blockText = block.text
-//                let blockConfidence = block.confidence
-//                let blockLanguages = block.recognizedLanguages
-//                let blockCornerPoints = block.cornerPoints
-//                let blockFrame = block.frame
-//                for line in block.lines {
-//                    let lineText = line.text
-//                    let lineConfidence = line.confidence
-//                    let lineLanguages = line.recognizedLanguages
-//                    let lineCornerPoints = line.cornerPoints
-//                    let lineFrame = line.frame
-//                    for element in line.elements {
-//                        let elementText = element.text
-//                        let elementConfidence = element.confidence
-//                        let elementLanguages = element.recognizedLanguages
-//                        let elementCornerPoints = element.cornerPoints
-//                        let elementFrame = element.frame
-//                    }
-//                }
-//            }
-//            self.label.text = result.text;
-//        }
     
     
     @IBAction func clearCanvas(_ sender: Any) {
