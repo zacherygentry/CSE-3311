@@ -8,7 +8,6 @@
 
 import UIKit
 import Sketch
-import Firebase
 
 class ViewController: UIViewController {
 
@@ -16,14 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet var sketchView: SketchView!
     @IBOutlet var label: UILabel!
     
-    let vision = Vision.vision()
-    
     @IBAction func submitImage(_ sender: Any) {
 //        let options = VisionCloudTextRecognizerOptions()
 //        options.languageHints = ["en"]
 //        let textRecognizer = vision.cloudTextRecognizer(options: options)
         let image = sketchView.asImage()
         UIImageWriteToSavedPhotosAlbum(image, self, nil, nil)
+        sketchView.clear()
         
     }
     
