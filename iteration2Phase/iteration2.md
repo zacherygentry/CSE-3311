@@ -207,7 +207,11 @@ If the answer is correct and is the end of the lesson, the screen will display â
 
 # Compiling app and Running
 
-1. 
+1. Clone our repo
+2. Go to Xcode project of cloned repo via command line
+3. Ensure you have Cocoapods installed to your system
+4. Run `pod install`
+5. Build and run the project!
 
 # Addressing Questions from the Review Team
 

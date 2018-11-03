@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NIc-sM-P5H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NIc-sM-P5H">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,10 +22,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lessonPlan" translatesAutoresizingMaskIntoConstraints="NO" id="cIg-2z-OiG">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbm-9Y-MAe">
-                                <rect key="frame" x="33" y="143" width="309" height="69"/>
+                                <rect key="frame" x="33" y="99" width="309" height="69"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="Dv7-3h-wmE"/>
                                 </constraints>
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87R-qJ-VNh">
-                                <rect key="frame" x="33" y="220" width="309" height="69"/>
+                                <rect key="frame" x="33" y="176" width="309" height="113"/>
                                 <state key="normal" image="lesson2" backgroundImage="Cloudbackgroundbutton-1"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYQ-SA-A0b">
@@ -98,7 +98,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="viewHistoryWithOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="bfw-xF-iow">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Lf-EC-cNA">
                                 <rect key="frame" x="48" y="192" width="279" height="436"/>
@@ -132,10 +132,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lessonX" translatesAutoresizingMaskIntoConstraints="NO" id="lGH-gg-hTI">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description of what is in this Lesson Plan set..." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SpW-er-zbR">
-                                <rect key="frame" x="22" y="114" width="331" height="56"/>
+                                <rect key="frame" x="22" y="70" width="331" height="100"/>
                                 <color key="backgroundColor" red="0.37354658155622417" green="0.97680455450000003" blue="0.69576361554003863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.19638882838558092" green="0.26534739847715738" blue="0.092684281497051324" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -203,7 +203,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lessonX" translatesAutoresizingMaskIntoConstraints="NO" id="zGh-ZQ-h2G">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbC-h7-vku">
                                 <rect key="frame" x="107" y="145" width="160" height="136"/>
@@ -212,9 +212,6 @@
                                 <state key="normal" title="Study" backgroundImage="CircleButtonApp-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="ZTZ-rl-B1A" kind="show" id="hSk-id-JKC"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gg-g5-Pc1">
                                 <rect key="frame" x="107" y="335" width="160" height="136"/>
@@ -307,12 +304,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="zk2-rS-aO2" kind="relationship" relationship="rootViewController" id="Zee-xG-VdN"/>
+                        <segue destination="ZTZ-rl-B1A" kind="relationship" relationship="rootViewController" id="vFe-Y8-ymX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7e-Ag-X2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="489" y="146"/>
+            <point key="canvasLocation" x="-343" y="144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zk5-4f-bvx">
@@ -327,7 +324,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lessonX" translatesAutoresizingMaskIntoConstraints="NO" id="gYY-dN-swP">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="About Section..." translatesAutoresizingMaskIntoConstraints="NO" id="Mo0-7g-ctd">
                                 <rect key="frame" x="16" y="150" width="343" height="425"/>
@@ -371,7 +368,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lessonX" translatesAutoresizingMaskIntoConstraints="NO" id="Fh3-RV-f01">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Instructions section..." translatesAutoresizingMaskIntoConstraints="NO" id="0JY-Dc-ebF">
                                 <rect key="frame" x="16" y="151" width="343" height="425"/>
@@ -418,9 +415,6 @@
                                 <rect key="frame" x="16" y="619" width="39" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="backButton"/>
-                                <connections>
-                                    <segue destination="NV4-7j-A3Z" kind="show" id="N4X-IM-f6A"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXe-16-a46" userLabel="Submit">
                                 <rect key="frame" x="238" y="617" width="121" height="42"/>
@@ -430,11 +424,6 @@
                                     <action selector="submitImage:" destination="ZTZ-rl-B1A" eventType="touchUpInside" id="Bn8-oC-9q7"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6b6-Mr-nIH" customClass="SketchView" customModule="Sketch">
-                                <rect key="frame" x="21" y="72" width="338" height="338"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udp-wA-Ogg">
                                 <rect key="frame" x="104" y="418" width="36" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -458,9 +447,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6b6-Mr-nIH" customClass="SketchView" customModule="Sketch">
+                                <rect key="frame" x="16" y="260" width="343" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nUi-rQ-uMj"/>
                     <connections>
                         <outlet property="label" destination="NtE-tF-mck" id="qUg-Qi-9dc"/>
                         <outlet property="sketchView" destination="6b6-Mr-nIH" id="HZa-jn-5c1"/>
@@ -468,7 +463,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zD1-Qg-WxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4704.8000000000002" y="-928.78560719640188"/>
+            <point key="canvasLocation" x="504.80000000000001" y="-275.71214392803603"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KW3-UZ-EN4">
@@ -563,7 +558,6 @@
         <image name="viewHistoryWithOpaque" width="250.5" height="478.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="N4X-IM-f6A"/>
         <segue reference="YnA-O5-0Sg"/>
     </inferredMetricsTieBreakers>
 </document>

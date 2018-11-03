@@ -8,7 +8,6 @@
 
 import UIKit
 import Sketch
-import Firebase
 
 class ViewController: UIViewController {
 
@@ -16,43 +15,14 @@ class ViewController: UIViewController {
     @IBOutlet var sketchView: SketchView!
     @IBOutlet var label: UILabel!
     
-    let vision = Vision.vision()
-    
     @IBAction func submitImage(_ sender: Any) {
-        let textRecognizer = vision.onDeviceTextRecognizer()
+//        let options = VisionCloudTextRecognizerOptions()
+//        options.languageHints = ["en"]
+//        let textRecognizer = vision.cloudTextRecognizer(options: options)
         let image = sketchView.asImage()
-        let vimage = VisionImage(image: image)
+        UIImageWriteToSavedPhotosAlbum(image, self, nil, nil)
+        sketchView.clear()
         
-        textRecognizer.process(vimage) { result, error in
-            guard error == nil, let result = result else {
-                // ...
-                return
-            }
-            let resultText = result.text
-            for block in result.blocks {
-                let blockText = block.text
-                print(blockText)
-                let blockConfidence = block.confidence
-                let blockLanguages = block.recognizedLanguages
-                let blockCornerPoints = block.cornerPoints
-                let blockFrame = block.frame
-                for line in block.lines {
-                    let lineText = line.text
-                    let lineConfidence = line.confidence
-                    let lineLanguages = line.recognizedLanguages
-                    let lineCornerPoints = line.cornerPoints
-                    let lineFrame = line.frame
-                    for element in line.elements {
-                        let elementText = element.text
-                        let elementConfidence = element.confidence
-                        let elementLanguages = element.recognizedLanguages
-                        let elementCornerPoints = element.cornerPoints
-                        let elementFrame = element.frame
-                    }
-                }
-            }
-            self.label.text = resultText;
-        }
     }
     
     
