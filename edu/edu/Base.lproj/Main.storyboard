@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NIc-sM-P5H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NIc-sM-P5H">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -541,21 +542,21 @@
     <resources>
         <image name="CircleButtonApp-1" width="160" height="136"/>
         <image name="Cloudbackgroundbutton-1" width="309" height="116"/>
-        <image name="Incorrect" width="220.5" height="76.5"/>
-        <image name="Listen" width="220.5" height="76.5"/>
-        <image name="backButton" width="28.5" height="29.25"/>
-        <image name="congrats" width="220.5" height="76.5"/>
-        <image name="correct" width="220.5" height="76.5"/>
-        <image name="lesson1" width="132" height="37.5"/>
-        <image name="lesson2" width="132" height="37.5"/>
-        <image name="lesson3" width="132" height="37.5"/>
-        <image name="lessonPlan" width="252" height="478.5"/>
-        <image name="lessonX" width="258" height="479.25"/>
-        <image name="resumeLesson" width="137.25" height="49.5"/>
-        <image name="startLesson" width="137.25" height="49.5"/>
-        <image name="submit" width="162.75" height="56.25"/>
-        <image name="viewHist" width="137.25" height="49.5"/>
-        <image name="viewHistoryWithOpaque" width="250.5" height="478.5"/>
+        <image name="Incorrect" width="294" height="102"/>
+        <image name="Listen" width="294" height="102"/>
+        <image name="backButton" width="38" height="39"/>
+        <image name="congrats" width="294" height="102"/>
+        <image name="correct" width="294" height="102"/>
+        <image name="lesson1" width="176" height="50"/>
+        <image name="lesson2" width="176" height="50"/>
+        <image name="lesson3" width="176" height="50"/>
+        <image name="lessonPlan" width="336" height="638"/>
+        <image name="lessonX" width="344" height="639"/>
+        <image name="resumeLesson" width="183" height="66"/>
+        <image name="startLesson" width="183" height="66"/>
+        <image name="submit" width="217" height="75"/>
+        <image name="viewHist" width="183" height="66"/>
+        <image name="viewHistoryWithOpaque" width="334" height="638"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="YnA-O5-0Sg"/>
