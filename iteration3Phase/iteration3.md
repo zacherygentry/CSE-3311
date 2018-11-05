@@ -176,6 +176,13 @@ If the answer is correct and is the end of the lesson, the screen will display �
 
 # Compiling app and Running
 
+## MacOS
+1. Clone project
+2. Navigate to XCode Project.
+3. Ensure CocoaPods is installed and run `pod install` for the XCode Project.
+4. Open the XCode Workspace
+5. Run the app either in a simulator or build to phone.
+
 # Addressing Questions from the Review Team
 
 * Since this app is intended for childrens, how are they expected to know to hit the submit button after drawing on the screen? 
@@ -185,7 +192,7 @@ If the answer is correct and is the end of the lesson, the screen will display �
   * Yes, the app stores the user's data on his/her device. Since there is no log-in, this app will indeed for a single user.
   
 * This app has features of Text Recognition, which uses Amazon Recognition API, that requires network connectivity. But on documentation, it says, “The app does not rely on network connectivity, everything is done locally in the app.” How would you justify that?
-  * The team are no longer relying on an API, they will be creating their own machine learning technology.
+  * The team is no longer relying on an Amazon's API, they will be creating their own machine learning model through Apple's Core ML technology.
 
 * Since this app is primarily targeted for kids, is there a “skip" option in case user gets stuck on a question? Will there be a “similar question” choice or will the user not be able to continue until question is correctly answered?
-  * No, there is no skip option. The child will be required to give an answer. If they cannot, then they will be expected to review lesson zero and try again.
+  * No, there is no skip option. The child will be required to give an answer. If they cannot, then either an adult will be there to assist, or they will be expected to review the more basic lessons and try again.
