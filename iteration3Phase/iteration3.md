@@ -176,8 +176,8 @@ If the answer is correct and is the end of the lesson, the screen will display â
   ![''](https://github.com/zacherygentry/CSE-3311/blob/master/Images/Iteration%203%20Images/IMG_9248.png "")
   ![''](https://github.com/zacherygentry/CSE-3311/blob/master/Images/Iteration%203%20Images/IMG_9249.png "")
   ![''](https://github.com/zacherygentry/CSE-3311/blob/master/Images/Iteration%203%20Images/IMG_9250.png "")
-  ![''](https://github.com/zacherygentry/CSE-3311/blob/master/Images/Iteration%203%20Images/IMG_9251.png "")
-  ![''](https://github.com/zacherygentry/CSE-3311/blob/master/Images/Iteration%203%20Images/IMG_9252.png "")
+  ![''](https://github.com/zacherygentry/CSE-3311/blob/master/Images/Iteration%203%20Images/IMG_9251.jpeg "")
+  ![''](https://github.com/zacherygentry/CSE-3311/blob/master/Images/Iteration%203%20Images/IMG_9253.png "")
 
 # Compiling app and Running
 
