@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var sketchView: SketchView!
     @IBOutlet var label: UILabel!
+    @IBOutlet var word: UILabel!
     
     let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
     var counter = 0
@@ -125,11 +126,12 @@ class ViewController: UIViewController {
     func checkGuess(guess: String) {
         print(guess)
         if(guess == self.currentWord){
-            self.label.text = "Congrats! " + guess + " is correct!"
+            self.label.text = "Congrats! " + guess.uppercased() + " is correct!"
             nextWord()
+            sketchView.clear()
         }
         else {
-            self.label.text =  guess + " is incorrect. Please try again. You need to write " + self.currentWord
+            self.label.text =  guess.uppercased() + " is incorrect. Please try again. You need to write " + self.currentWord.uppercased()
         }
     }
     
@@ -137,6 +139,7 @@ class ViewController: UIViewController {
         self.counter += 1
         if(counter < alphabet.count){
             self.currentWord = alphabet[counter]
+            self.word.text = "Current Letter: " + currentWord.uppercased()
         }
     }
 
