@@ -17,6 +17,11 @@ class ViewController: UIViewController {
     
     @IBOutlet var sketchView: SketchView!
     @IBOutlet var label: UILabel!
+    
+    let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    var counter = 0
+    var currentWord = "a"
+    var guess = ""
 
     
     @IBAction func submitImage(_ sender: Any) {
@@ -25,7 +30,6 @@ class ViewController: UIViewController {
 //        let textRecognizer = vision.cloudTextRecognizer(options: options)
         let image = sketchView.asImage()
         updateClassifications(for: image)
-        
     }
     
     
@@ -104,9 +108,35 @@ class ViewController: UIViewController {
                     // Formats the classification for display; e.g. "(0.37) cliff, drop, drop-off".
                     return String(format: "  (%.2f) %@", classification.confidence, classification.identifier)
                 }
+                let topConfidence = topClassifications[0].confidence
+                if(topConfidence > 0.40){
+                    self.guess = topClassifications[0].identifier
+                    self.checkGuess(guess: self.guess)
+                    
+                }
+                else {
+                    self.guess = "unknown"
+                }
                 print("Classification:\n" + descriptions.joined(separator: "\n"))
-                self.label.text = "Classification:\n" + descriptions.joined(separator: "\n")
             }
+        }
+    }
+    
+    func checkGuess(guess: String) {
+        print(guess)
+        if(guess == self.currentWord){
+            self.label.text = "Congrats! " + guess + " is correct!"
+            nextWord()
+        }
+        else {
+            self.label.text =  guess + " is incorrect. Please try again. You need to write " + self.currentWord
+        }
+    }
+    
+    func nextWord(){
+        self.counter += 1
+        if(counter < alphabet.count){
+            self.currentWord = alphabet[counter]
         }
     }
 
