@@ -7,10 +7,7 @@ target 'edU' do
 
   # Pods for edU
     pod 'Sketch'
-    pod 'Firebase/Core'
-    pod 'Firebase/MLVision'
-    # If using an on-device API:
-    pod 'Firebase/MLVisionTextModel'
+    pod 'SwiftyButton'
 
   target 'edUTests' do
     inherit! :search_paths
