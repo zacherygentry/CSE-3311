@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "viewHistoryWithOpaque.png",
+      "filename" : "ViewHistory.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ViewHistory@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ViewHistory@3x.png",
       "scale" : "3x"
     }
   ],

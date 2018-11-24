@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NIc-sM-P5H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="NIc-sM-P5H">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,79 +21,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lessonPlan-1" translatesAutoresizingMaskIntoConstraints="NO" id="cIg-2z-OiG">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="lessonPlan-1" translatesAutoresizingMaskIntoConstraints="NO" id="cIg-2z-OiG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbm-9Y-MAe">
-                                <rect key="frame" x="33" y="143" width="309" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Alphabet" backgroundImage="Cloudbackgroundbutton-1">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbm-9Y-MAe">
+                                <rect key="frame" x="251" y="364" width="100" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <state key="normal" title="Alphabet" backgroundImage="lesson1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="h5x-pO-Wnn" kind="show" id="y8e-wL-D81"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87R-qJ-VNh">
-                                <rect key="frame" x="33" y="210" width="309" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87R-qJ-VNh">
+                                <rect key="frame" x="251" y="466" width="100" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <state key="normal" title="Numbers" backgroundImage="Cloudbackgroundbutton-1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0r-lA-tiW">
-                                <rect key="frame" x="187" y="552" width="126" height="38"/>
-                                <state key="normal" title="Instructions" backgroundImage="CircleButtonApp-1">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0r-lA-tiW">
+                                <rect key="frame" x="203" y="581" width="172" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <state key="normal" title="Instructions" backgroundImage="lesson2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="3om-qy-sYh" kind="show" id="vVV-Gu-gZR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9R-Ji-gUp">
-                                <rect key="frame" x="93" y="552" width="75" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="15B-X4-kDG"/>
-                                    <constraint firstAttribute="width" constant="75" id="hGX-nu-i7B"/>
-                                </constraints>
-                                <state key="normal" title="About" backgroundImage="CircleButtonApp-1">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYQ-SA-A0b">
+                                <rect key="frame" x="251" y="255" width="100" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <state key="normal" title="Words" backgroundImage="Cloudbackgroundbutton-1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9R-Ji-gUp">
+                                <rect key="frame" x="82" y="591" width="85" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <state key="normal" title="About" backgroundImage="lesson3">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="czA-sL-wxr" kind="show" id="U4A-x2-16p"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lesson Plans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viM-jM-0O8">
-                                <rect key="frame" x="83" y="90" width="208" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYQ-SA-A0b">
-                                <rect key="frame" x="33" y="277" width="309" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="3-letter Words" backgroundImage="Cloudbackgroundbutton-1">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="cIg-2z-OiG" firstAttribute="centerX" secondItem="viM-jM-0O8" secondAttribute="centerX" id="4ar-T8-4rc"/>
-                            <constraint firstAttribute="trailing" secondItem="cIg-2z-OiG" secondAttribute="trailing" id="HHe-CC-LRj"/>
-                            <constraint firstItem="cIg-2z-OiG" firstAttribute="bottom" secondItem="lSE-XM-Ab1" secondAttribute="top" id="JuL-Vb-53J"/>
-                            <constraint firstItem="cIg-2z-OiG" firstAttribute="leading" secondItem="yYe-gc-oEJ" secondAttribute="leading" id="OWB-1I-PqB"/>
-                            <constraint firstItem="A9R-Ji-gUp" firstAttribute="baseline" secondItem="I0r-lA-tiW" secondAttribute="firstBaseline" id="Qug-QY-Hae"/>
-                            <constraint firstItem="viM-jM-0O8" firstAttribute="top" secondItem="icx-Ar-sf3" secondAttribute="bottom" constant="26" id="R2T-WB-l7u"/>
-                            <constraint firstItem="A9R-Ji-gUp" firstAttribute="leading" secondItem="yYe-gc-oEJ" secondAttribute="leadingMargin" constant="77" id="RKk-zv-F4q"/>
-                            <constraint firstItem="lSE-XM-Ab1" firstAttribute="top" secondItem="A9R-Ji-gUp" secondAttribute="bottom" constant="77" id="TcO-yw-DcJ"/>
-                            <constraint firstItem="I0r-lA-tiW" firstAttribute="baseline" secondItem="A9R-Ji-gUp" secondAttribute="firstBaseline" id="fiC-vN-Ry4"/>
-                            <constraint firstItem="A9R-Ji-gUp" firstAttribute="top" secondItem="I0r-lA-tiW" secondAttribute="top" id="fqb-0s-Mhh"/>
-                            <constraint firstItem="cIg-2z-OiG" firstAttribute="top" secondItem="icx-Ar-sf3" secondAttribute="bottom" id="kXb-VC-qjp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="I0r-lA-tiW" secondAttribute="trailing" constant="46" id="ocG-IR-qgl"/>
-                            <constraint firstItem="I0r-lA-tiW" firstAttribute="leading" secondItem="A9R-Ji-gUp" secondAttribute="trailing" constant="19" id="yrK-QE-Rmc"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UbF-5j-K5K"/>
                 </viewController>
@@ -125,25 +105,16 @@
                                     <constraint firstAttribute="height" constant="436" id="fkK-bM-X9W"/>
                                 </constraints>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bF4-2g-cxV">
-                                <rect key="frame" x="131" y="98" width="113" height="45"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="bfw-xF-iow" secondAttribute="trailing" id="1uu-G4-OMs"/>
                             <constraint firstItem="2Lf-EC-cNA" firstAttribute="leading" secondItem="24H-9z-aJc" secondAttribute="leadingMargin" constant="32" id="4KV-mO-dWa"/>
-                            <constraint firstItem="bF4-2g-cxV" firstAttribute="centerX" secondItem="2Lf-EC-cNA" secondAttribute="centerX" id="A1a-qG-he6"/>
                             <constraint firstItem="H6C-nb-5Rv" firstAttribute="top" secondItem="2Lf-EC-cNA" secondAttribute="bottom" constant="39" id="For-OF-10X"/>
                             <constraint firstItem="bfw-xF-iow" firstAttribute="top" secondItem="2P6-2l-nuG" secondAttribute="bottom" id="Ifk-uC-ilT"/>
                             <constraint firstItem="bfw-xF-iow" firstAttribute="bottom" secondItem="H6C-nb-5Rv" secondAttribute="top" id="Kkh-GP-jKf"/>
                             <constraint firstItem="bfw-xF-iow" firstAttribute="leading" secondItem="24H-9z-aJc" secondAttribute="leading" id="Q6U-du-qTb"/>
                             <constraint firstItem="2Lf-EC-cNA" firstAttribute="centerX" secondItem="bfw-xF-iow" secondAttribute="centerX" id="f0Z-H1-hAR"/>
-                            <constraint firstItem="bF4-2g-cxV" firstAttribute="top" secondItem="2P6-2l-nuG" secondAttribute="bottom" constant="34" id="zQz-Pm-BzI"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -166,39 +137,56 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lessonX" translatesAutoresizingMaskIntoConstraints="NO" id="lGH-gg-hTI">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jf1-is-VWv">
+                                <rect key="frame" x="16" y="97" width="343" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.61863227739726023" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="0.59999999999999998" height="0.84999999999999998"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Fun way to learn all 26 letters of the alphabet, after this lesson you will be able to read your alphabet soup ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.95686274510000002" green="0.16860933913813797" blue="0.39993258088518402" alpha="0.96524507705479456" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="ChalkboardSE-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="😊">
+                                        <attributes>
+                                            <color key="NSColor" red="0.95686274510000002" green="0.16860933913813797" blue="0.39993258088518402" alpha="0.96524507705479456" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="AppleColorEmoji"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.95686274510000002" green="0.16860933910000001" blue="0.3999325809" alpha="0.96524507709999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.58436483144760132" green="0.91941851377487183" blue="0.87979072332382202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3g-6t-DIC">
-                                <rect key="frame" x="16" y="349" width="160" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="129" y="575" width="246" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <state key="normal" title="Resume" backgroundImage="CircleButtonApp-1">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhX-Qe-mHe">
-                                <rect key="frame" x="193" y="349" width="160" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhX-Qe-mHe">
+                                <rect key="frame" x="129" y="528" width="246" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <state key="normal" title="History" backgroundImage="CircleButtonApp-1">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="Ri8-Dv-qi0" kind="show" id="lNo-1y-2i3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fun way to learn all 26 letters of the alphabet, after this lesson you will be able to read your alphabet soup 😊" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jf1-is-VWv">
-                                <rect key="frame" x="16" y="97" width="343" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.37354658159999998" green="0.97680455450000003" blue="0.69576361549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whv-pg-fzt">
-                                <rect key="frame" x="107" y="205" width="160" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whv-pg-fzt">
+                                <rect key="frame" x="129" y="481" width="246" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <state key="normal" title="Start" backgroundImage="CircleButtonApp-1">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="ZTZ-rl-B1A" kind="show" id="moa-Ca-QgL"/>
@@ -231,10 +219,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackboard" translatesAutoresizingMaskIntoConstraints="NO" id="zk4-yN-NBX">
-                                <rect key="frame" x="0.0" y="64" width="375" height="611"/>
+                                <rect key="frame" x="0.0" y="64" width="300" height="611"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Listen" translatesAutoresizingMaskIntoConstraints="NO" id="iDo-TS-c4P">
-                                <rect key="frame" x="40" y="220" width="294" height="128"/>
+                                <rect key="frame" x="40" y="220" width="220" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -284,37 +272,32 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="viewHistory1-1" translatesAutoresizingMaskIntoConstraints="NO" id="gYY-dN-swP">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERc-9I-tGH">
-                                <rect key="frame" x="139" y="85" width="97" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="4pA-cO-gXo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WA-tb-V4g">
-                                <rect key="frame" x="16" y="158" width="343" height="253"/>
-                                <color key="backgroundColor" red="0.37354658159999998" green="0.97680455450000003" blue="0.69576361549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">edU is a learning-assistant app, geared to help kids learn the basics of phonics, shapes and mathematics. Using new innovative technology, edU will encourage and increase childrens imagination as well as their motivation to learn. 
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9WA-tb-V4g">
+                                <rect key="frame" x="16" y="216" width="343" height="323"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">edU is a learning-assistant app, geared to help kids learn the basics of phonics, shapes and mathematics. Using new innovative technology, edU will encourage and increase childrens imagination as well as their motivation to learn. 
 
 Creators: Zach Gentry, Giannina Pachas, Courtney Howland, Tousar Mohammed
 
 Images by : pizabay</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="19" name="ChalkboardSE-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.58436483144760132" green="0.91941851377487183" blue="0.87979072332382202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ERc-9I-tGH" firstAttribute="centerX" secondItem="gYY-dN-swP" secondAttribute="centerX" id="9dC-9n-33R"/>
-                            <constraint firstItem="ERc-9I-tGH" firstAttribute="top" secondItem="03c-nY-Zn7" secondAttribute="bottom" constant="21" id="ALT-a4-6cf"/>
-                            <constraint firstItem="ERc-9I-tGH" firstAttribute="centerX" secondItem="9WA-tb-V4g" secondAttribute="centerX" id="D34-RJ-hgM"/>
-                            <constraint firstItem="9WA-tb-V4g" firstAttribute="leading" secondItem="K4l-hE-LUo" secondAttribute="leadingMargin" id="I33-ug-lU2"/>
-                            <constraint firstItem="Tma-98-0X5" firstAttribute="top" secondItem="9WA-tb-V4g" secondAttribute="bottom" constant="256" id="S14-Ed-Ohw"/>
                             <constraint firstItem="gYY-dN-swP" firstAttribute="leading" secondItem="K4l-hE-LUo" secondAttribute="leading" id="XnU-c9-Qx4"/>
-                            <constraint firstItem="9WA-tb-V4g" firstAttribute="top" secondItem="ERc-9I-tGH" secondAttribute="bottom" constant="28" id="nHm-ga-erl"/>
                             <constraint firstItem="gYY-dN-swP" firstAttribute="top" secondItem="03c-nY-Zn7" secondAttribute="bottom" id="tLv-8E-s7p"/>
                             <constraint firstAttribute="trailing" secondItem="gYY-dN-swP" secondAttribute="trailing" id="xj3-As-G7c"/>
                             <constraint firstItem="gYY-dN-swP" firstAttribute="bottom" secondItem="Tma-98-0X5" secondAttribute="top" id="ykW-2R-ycE"/>
@@ -337,18 +320,14 @@ Images by : pizabay</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lessonPlan-1" translatesAutoresizingMaskIntoConstraints="NO" id="Fh3-RV-f01">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="viewHistory1" translatesAutoresizingMaskIntoConstraints="NO" id="Fh3-RV-f01">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTT-AB-Yws">
-                                <rect key="frame" x="94" y="87" width="186" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instruction section..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeO-dD-ebw">
-                                <rect key="frame" x="16" y="156" width="343" height="418"/>
-                                <color key="backgroundColor" red="0.37354658159999998" green="0.97680455450000003" blue="0.69576361549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" text="Instruction section..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeO-dD-ebw">
+                                <rect key="frame" x="16" y="230" width="343" height="417"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94994633319999999" green="0.95509195729999996" blue="0.95686274510000002" alpha="0.4455265410958904" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -357,15 +336,9 @@ Images by : pizabay</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Fh3-RV-f01" firstAttribute="bottom" secondItem="vW9-Vf-GdX" secondAttribute="top" id="3b6-SO-TrP"/>
-                            <constraint firstItem="JTT-AB-Yws" firstAttribute="centerX" secondItem="eeO-dD-ebw" secondAttribute="centerX" id="AKe-Lt-sVO"/>
-                            <constraint firstItem="JTT-AB-Yws" firstAttribute="top" secondItem="uhu-32-gGE" secondAttribute="bottom" constant="23" id="KAh-Bj-1hr"/>
                             <constraint firstItem="Fh3-RV-f01" firstAttribute="leading" secondItem="QBH-el-N0G" secondAttribute="leading" id="L8K-0V-mp5"/>
                             <constraint firstAttribute="trailing" secondItem="Fh3-RV-f01" secondAttribute="trailing" id="V3Y-Pb-8jr"/>
-                            <constraint firstItem="JTT-AB-Yws" firstAttribute="centerX" secondItem="Fh3-RV-f01" secondAttribute="centerX" id="ceV-9Q-B6K"/>
-                            <constraint firstItem="eeO-dD-ebw" firstAttribute="centerY" secondItem="Fh3-RV-f01" secondAttribute="centerY" id="chR-7U-JcE"/>
                             <constraint firstItem="Fh3-RV-f01" firstAttribute="top" secondItem="uhu-32-gGE" secondAttribute="bottom" id="hDS-OJ-mZ5"/>
-                            <constraint firstItem="eeO-dD-ebw" firstAttribute="leading" secondItem="QBH-el-N0G" secondAttribute="leadingMargin" id="kJL-LH-nrD"/>
-                            <constraint firstItem="vW9-Vf-GdX" firstAttribute="top" secondItem="eeO-dD-ebw" secondAttribute="bottom" constant="93" id="mPU-Ow-hP7"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -407,18 +380,18 @@ Images by : pizabay</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6b6-Mr-nIH" customClass="SketchView" customModule="Sketch">
-                                <rect key="frame" x="16" y="258" width="343" height="150"/>
+                                <rect key="frame" x="16" y="258" width="343" height="151"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udp-wA-Ogg">
-                                <rect key="frame" x="297" y="416" width="36" height="30"/>
+                                <rect key="frame" x="297" y="417" width="36" height="30"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
                                     <action selector="clearCanvas:" destination="ZTZ-rl-B1A" eventType="touchUpInside" id="ILt-gv-lzz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Why-8C-ImF">
-                                <rect key="frame" x="248" y="416" width="41" height="30"/>
+                                <rect key="frame" x="248" y="417" width="41" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="CGS-lg-TKr"/>
                                     <constraint firstAttribute="width" constant="41" id="W7C-gt-6Xc"/>
@@ -429,7 +402,7 @@ Images by : pizabay</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtE-tF-mck">
-                                <rect key="frame" x="29" y="456" width="316" height="110"/>
+                                <rect key="frame" x="10" y="440" width="316" height="110"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -578,20 +551,24 @@ Images by : pizabay</string>
         </scene>
     </scenes>
     <resources>
-        <image name="CircleButtonApp-1" width="160" height="136"/>
-        <image name="Cloudbackgroundbutton-1" width="309" height="116"/>
-        <image name="Incorrect" width="294" height="102"/>
-        <image name="Listen" width="294" height="102"/>
-        <image name="blackboard" width="337" height="636"/>
-        <image name="blackboard_apple" width="337" height="636"/>
-        <image name="blackboard_draw" width="337" height="636"/>
-        <image name="congrats" width="294" height="102"/>
-        <image name="correct" width="294" height="102"/>
-        <image name="lessonPlan-1" width="336" height="638"/>
-        <image name="lessonX" width="344" height="639"/>
-        <image name="listenButton" width="44" height="41"/>
-        <image name="submit" width="217" height="75"/>
-        <image name="viewHistory1-1" width="334" height="638"/>
-        <image name="viewHistoryWithOpaque-1" width="334" height="638"/>
+        <image name="CircleButtonApp-1" width="548.5714111328125" height="83.428573608398438"/>
+        <image name="Cloudbackgroundbutton-1" width="2167" height="2204"/>
+        <image name="Incorrect" width="220.5" height="76.5"/>
+        <image name="Listen" width="220.5" height="76.5"/>
+        <image name="blackboard" width="252.75" height="477"/>
+        <image name="blackboard_apple" width="252.75" height="477"/>
+        <image name="blackboard_draw" width="252.75" height="477"/>
+        <image name="congrats" width="220.5" height="76.5"/>
+        <image name="correct" width="220.5" height="76.5"/>
+        <image name="lesson1" width="2167" height="2204"/>
+        <image name="lesson2" width="207.94224548339844" height="120"/>
+        <image name="lesson3" width="2400" height="1790"/>
+        <image name="lessonPlan-1" width="375" height="667"/>
+        <image name="lessonX" width="375" height="667"/>
+        <image name="listenButton" width="33" height="30.75"/>
+        <image name="submit" width="162.75" height="56.25"/>
+        <image name="viewHistory1" width="375" height="667"/>
+        <image name="viewHistory1-1" width="375" height="667"/>
+        <image name="viewHistoryWithOpaque-1" width="375" height="667"/>
     </resources>
 </document>
