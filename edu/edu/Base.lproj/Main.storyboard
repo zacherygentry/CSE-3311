@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="lessonPlan-1" translatesAutoresizingMaskIntoConstraints="NO" id="cIg-2z-OiG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="lessonPlan" translatesAutoresizingMaskIntoConstraints="NO" id="cIg-2z-OiG">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -548,7 +548,7 @@ Images by : pizabay</string>
         <image name="lesson1" width="2167" height="2204"/>
         <image name="lesson2" width="207.94224548339844" height="120"/>
         <image name="lesson3" width="2400" height="1790"/>
-        <image name="lessonPlan-1" width="375" height="667"/>
+        <image name="lessonPlan" width="375" height="667"/>
         <image name="lessonX" width="375" height="667"/>
         <image name="listenButton" width="33" height="30.75"/>
         <image name="submit" width="162.75" height="56.25"/>
