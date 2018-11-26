@@ -8,6 +8,7 @@ target 'edU' do
   # Pods for edU
     pod 'Sketch'
     pod 'SwiftySound'
+    pod 'anim'
 
   target 'edUTests' do
     inherit! :search_paths

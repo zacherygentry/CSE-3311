@@ -12,6 +12,7 @@ import CoreML
 import Vision
 import ImageIO
 import SwiftySound
+import anim
 
 class ViewController: UIViewController {
     
@@ -21,17 +22,26 @@ class ViewController: UIViewController {
     @IBOutlet var header: UILabel!
     var headerString: String = "Default"
     
+    @IBOutlet var wrong: UILabel!
+    @IBOutlet var correct: UIImageView!
+    
     var model: MLModel = AlphabetClassifier().model
     var list: [String] = []
     var counter = 0
     var currentWord = ""
     var guess = ""
     
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         sketchView.lineColor = UIColor.white
         sketchView.backgroundColor = UIColor.black
+        self.correct.alpha = 0
+        self.correct.frame.origin = CGPoint(x: 0, y: 0)
+        self.wrong.alpha = 0
+        self.wrong.frame.origin = CGPoint(x: 0, y: 0)
         
         
         header.text = headerString
@@ -136,8 +146,12 @@ class ViewController: UIViewController {
         print(guess)
         if(guess == self.currentWord){
             nextWord()
+            fadeCorrectIn()
             print("Good job! " + guess + " is correct!")
             sketchView.clear()
+        }
+        else{
+            fadeWrongIn()
         }
     }
     
@@ -145,7 +159,21 @@ class ViewController: UIViewController {
         self.counter += 1
         if(counter < list.count){
             self.currentWord = list[counter]
-            playWord()
+        }
+        else {
+            counter = 0
+            self.currentWord = list[counter]
+        }
+        
+        switch headerString {
+        case "Alphabet":
+            defaults.set(counter, forKey: "alphabet")
+        case "Numbers":
+            defaults.set(counter, forKey: "nunmbers")
+        case "Shapes":
+            defaults.set(counter, forKey: "shapes")
+        default:
+            print("Error")
         }
     }
     
@@ -160,6 +188,26 @@ class ViewController: UIViewController {
     
     func playWord(){
         Sound.play(file: currentWord, fileExtension: "m4a")
+    }
+    
+    func fadeCorrectIn(){
+        self.correct.frame.origin = CGPoint(x: 120, y: 266)
+        anim {
+            self.correct.alpha = 1
+            }.then {
+                self.correct.alpha = 0
+                self.playWord()
+            }
+    }
+    
+    func fadeWrongIn(){
+        self.wrong.frame.origin = CGPoint(x: 38, y: 266)
+        anim {
+            self.wrong.alpha = 1
+            }.then {
+                self.wrong.alpha = 0
+                self.playWord()
+            }
     }
 }
 

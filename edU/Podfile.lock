@@ -1,20 +1,24 @@
 PODS:
+  - anim (1.2.8)
   - Sketch (2.0)
   - SwiftySound (1.0.0)
 
 DEPENDENCIES:
+  - anim
   - Sketch
   - SwiftySound
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - anim
     - Sketch
     - SwiftySound
 
 SPEC CHECKSUMS:
+  anim: a07cd14b3279a69781bc3da9a42739b6e2c77344
   Sketch: c54b898799ba34cb282b57ff42b5d0a6071e855f
   SwiftySound: b9c3370956fd4ed65ed79d45563070077a50a2cd
 
-PODFILE CHECKSUM: d2141b69ababddac6ef2670f5891811a9fca3d87
+PODFILE CHECKSUM: f2eeedeb81250bb19a91023f51205ee21643df46
 
 COCOAPODS: 1.5.3

@@ -178,12 +178,15 @@
                                 <state key="normal" title="Resume" backgroundImage="CircleButtonApp-1">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ZTZ-rl-B1A" kind="show" id="9Va-Vv-azL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whv-pg-fzt">
                                 <rect key="frame" x="64" y="233" width="246" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
-                                <state key="normal" title="Start" backgroundImage="CircleButtonApp-1">
+                                <state key="normal" title="Start New" backgroundImage="CircleButtonApp-1">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -202,6 +205,7 @@
                     <connections>
                         <outlet property="desc" destination="jf1-is-VWv" id="uyy-Ld-hHy"/>
                         <outlet property="headerTitle" destination="AYP-Ux-TjO" id="dr6-8K-RVy"/>
+                        <outlet property="resumeButton" destination="r3g-6t-DIC" id="gsU-yW-N17"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfK-ny-Yl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -290,13 +294,20 @@ Images by : pizabay</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="viewHistory1" translatesAutoresizingMaskIntoConstraints="NO" id="Fh3-RV-f01">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <label clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" text="Instruction section..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeO-dD-ebw">
-                                <rect key="frame" x="16" y="230" width="343" height="417"/>
+                            <label clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeO-dD-ebw">
+                                <rect key="frame" x="16" y="191" width="343" height="456"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94994633319999999" green="0.95509195729999996" blue="0.95686274510000002" alpha="0.4455265410958904" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <string key="text">Alphabet:
+A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z  
+
+Numbers:
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9  
+
+Shapes:
+ ⃝, △,  ⃞, ▭, ⏢, ⬡, ♢</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -367,18 +378,31 @@ Images by : pizabay</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYk-JA-dep">
-                                <rect key="frame" x="103" y="72" width="168" height="84"/>
+                                <rect key="frame" x="147" y="71" width="168" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="dfc-DK-X7c">
+                                <rect key="frame" x="120" y="266" width="135" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Try Again!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ED4-ZJ-QXW">
+                                <rect key="frame" x="38" y="266" width="299" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
+                        <outlet property="correct" destination="dfc-DK-X7c" id="U8R-Cl-CWp"/>
                         <outlet property="header" destination="UYk-JA-dep" id="Xad-rr-WZ8"/>
                         <outlet property="sketchView" destination="6b6-Mr-nIH" id="HZa-jn-5c1"/>
+                        <outlet property="wrong" destination="ED4-ZJ-QXW" id="8Xy-1R-R0L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zD1-Qg-WxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -390,6 +414,7 @@ Images by : pizabay</string>
         <image name="CircleButtonApp-1" width="548.5714111328125" height="83.428573608398438"/>
         <image name="Cloudbackgroundbutton-1" width="2167" height="2204"/>
         <image name="LessonPlan-1" width="375" height="667"/>
+        <image name="correct" width="256" height="256"/>
         <image name="lesson1" width="2167" height="2204"/>
         <image name="lesson2" width="207.94224548339844" height="120"/>
         <image name="lesson3" width="2400" height="1790"/>
@@ -401,6 +426,7 @@ Images by : pizabay</string>
         <image name="viewHistoryWithOpaque-1" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="9Va-Vv-azL"/>
         <segue reference="6uj-vz-OWq"/>
     </inferredMetricsTieBreakers>
 </document>
