@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2618987621AB61B000243D0A /* HandwritingClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2618987521AB61B000243D0A /* HandwritingClassifier.mlmodel */; };
 		2618987921AB628500243D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2618987821AB628500243D0A /* Assets.xcassets */; };
+		2618987F21AB92BE00243D0A /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2618987E21AB92BE00243D0A /* LessonsViewController.swift */; };
+		2618988121AB958F00243D0A /* SingleLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2618988021AB958F00243D0A /* SingleLessonViewController.swift */; };
+		2618988521ABA61100243D0A /* NumberClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2618988221ABA61000243D0A /* NumberClassifier.mlmodel */; };
+		2618988621ABA61100243D0A /* ShapeClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2618988321ABA61000243D0A /* ShapeClassifier.mlmodel */; };
+		2618988721ABA61100243D0A /* AlphabetClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2618988421ABA61000243D0A /* AlphabetClassifier.mlmodel */; };
 		26A2CEE021731DD6009D6BE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A2CEDD21731DD6009D6BE2 /* AppDelegate.swift */; };
 		26A2CEE121731DD7009D6BE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26A2CEDE21731DD6009D6BE2 /* GoogleService-Info.plist */; };
 		26A2CEE221731DD7009D6BE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A2CEDF21731DD6009D6BE2 /* ViewController.swift */; };
@@ -40,8 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2618987521AB61B000243D0A /* HandwritingClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = HandwritingClassifier.mlmodel; path = ../../../../../HandwritingClassifier.mlmodel; sourceTree = "<group>"; };
 		2618987821AB628500243D0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = edu/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		2618987E21AB92BE00243D0A /* LessonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LessonsViewController.swift; path = edu/LessonsViewController.swift; sourceTree = SOURCE_ROOT; };
+		2618988021AB958F00243D0A /* SingleLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SingleLessonViewController.swift; path = edu/SingleLessonViewController.swift; sourceTree = SOURCE_ROOT; };
+		2618988221ABA61000243D0A /* NumberClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = NumberClassifier.mlmodel; path = edu/NumberClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
+		2618988321ABA61000243D0A /* ShapeClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ShapeClassifier.mlmodel; path = edu/ShapeClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
+		2618988421ABA61000243D0A /* AlphabetClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = AlphabetClassifier.mlmodel; path = edu/AlphabetClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
 		26A2CEDC21731DD6009D6BE2 /* edU-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "edU-Bridging-Header.h"; sourceTree = "<group>"; };
 		26A2CEDD21731DD6009D6BE2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = edu/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		26A2CEDE21731DD6009D6BE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "edu/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -146,8 +154,10 @@
 		A2327986216FDBD500A70E6D /* edU */ = {
 			isa = PBXGroup;
 			children = (
+				2618988421ABA61000243D0A /* AlphabetClassifier.mlmodel */,
+				2618988221ABA61000243D0A /* NumberClassifier.mlmodel */,
+				2618988321ABA61000243D0A /* ShapeClassifier.mlmodel */,
 				2618987821AB628500243D0A /* Assets.xcassets */,
-				2618987521AB61B000243D0A /* HandwritingClassifier.mlmodel */,
 				26A2CEDD21731DD6009D6BE2 /* AppDelegate.swift */,
 				26A2CEDE21731DD6009D6BE2 /* GoogleService-Info.plist */,
 				26A2CEDF21731DD6009D6BE2 /* ViewController.swift */,
@@ -155,6 +165,8 @@
 				A2327990216FDBD500A70E6D /* LaunchScreen.storyboard */,
 				A2327993216FDBD500A70E6D /* Info.plist */,
 				26A2CEDC21731DD6009D6BE2 /* edU-Bridging-Header.h */,
+				2618987E21AB92BE00243D0A /* LessonsViewController.swift */,
+				2618988021AB958F00243D0A /* SingleLessonViewController.swift */,
 			);
 			path = edU;
 			sourceTree = "<group>";
@@ -386,12 +398,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-edU/Pods-edU-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Sketch/Sketch.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftySound/SwiftySound.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sketch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftySound.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -405,9 +419,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2618987621AB61B000243D0A /* HandwritingClassifier.mlmodel in Sources */,
+				2618988121AB958F00243D0A /* SingleLessonViewController.swift in Sources */,
+				2618988721ABA61100243D0A /* AlphabetClassifier.mlmodel in Sources */,
+				2618987F21AB92BE00243D0A /* LessonsViewController.swift in Sources */,
+				2618988521ABA61100243D0A /* NumberClassifier.mlmodel in Sources */,
 				26A2CEE221731DD7009D6BE2 /* ViewController.swift in Sources */,
 				26A2CEE021731DD6009D6BE2 /* AppDelegate.swift in Sources */,
+				2618988621ABA61100243D0A /* ShapeClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

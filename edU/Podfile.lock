@@ -1,16 +1,20 @@
 PODS:
   - Sketch (2.0)
+  - SwiftySound (1.0.0)
 
 DEPENDENCIES:
   - Sketch
+  - SwiftySound
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Sketch
+    - SwiftySound
 
 SPEC CHECKSUMS:
   Sketch: c54b898799ba34cb282b57ff42b5d0a6071e855f
+  SwiftySound: b9c3370956fd4ed65ed79d45563070077a50a2cd
 
-PODFILE CHECKSUM: f0cc00e214dc86164a8ad10c54718f97c474cb6a
+PODFILE CHECKSUM: d2141b69ababddac6ef2670f5891811a9fca3d87
 
 COCOAPODS: 1.5.3

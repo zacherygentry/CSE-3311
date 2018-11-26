@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Lessons View Controller-->
         <scene sceneID="F3s-0N-9De">
             <objects>
-                <viewController id="zk2-rS-aO2" sceneMemberID="viewController">
+                <viewController id="zk2-rS-aO2" customClass="LessonsViewController" customModule="edU" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="icx-Ar-sf3"/>
                         <viewControllerLayoutGuide type="bottom" id="lSE-XM-Ab1"/>
@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="lessonPlan" translatesAutoresizingMaskIntoConstraints="NO" id="cIg-2z-OiG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="LessonPlan-1" translatesAutoresizingMaskIntoConstraints="NO" id="cIg-2z-OiG">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -30,10 +30,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <state key="normal" title="Alphabet" backgroundImage="lesson1">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="h5x-pO-Wnn" kind="show" id="y8e-wL-D81"/>
+                                    <action selector="alphabet:" destination="zk2-rS-aO2" eventType="touchUpInside" id="dxq-M4-tbU"/>
+                                    <segue destination="h5x-pO-Wnn" kind="show" id="6uj-vz-OWq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87R-qJ-VNh">
@@ -41,8 +42,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <state key="normal" title="Numbers" backgroundImage="Cloudbackgroundbutton-1">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="Numbers:" destination="zk2-rS-aO2" eventType="touchUpInside" id="J6k-L3-YjK"/>
+                                    <segue destination="h5x-pO-Wnn" kind="show" id="71t-cF-VMv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0r-lA-tiW">
                                 <rect key="frame" x="203" y="581" width="172" height="87"/>
@@ -59,9 +64,13 @@
                                 <rect key="frame" x="251" y="255" width="100" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
-                                <state key="normal" title="Words" backgroundImage="Cloudbackgroundbutton-1">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Shapes" backgroundImage="Cloudbackgroundbutton-1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="Shapes:" destination="zk2-rS-aO2" eventType="touchUpInside" id="oqc-sx-ddu"/>
+                                    <segue destination="h5x-pO-Wnn" kind="show" id="Eh3-he-eDP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9R-Ji-gUp">
                                 <rect key="frame" x="82" y="591" width="85" height="76"/>
@@ -125,7 +134,7 @@
         <!--Alphabet-->
         <scene sceneID="Xbi-zu-hCf">
             <objects>
-                <viewController id="h5x-pO-Wnn" sceneMemberID="viewController">
+                <viewController id="h5x-pO-Wnn" customClass="SingleLessonViewController" customModule="edU" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GNT-m6-gqx"/>
                         <viewControllerLayoutGuide type="bottom" id="8Ov-ag-aqW"/>
@@ -201,10 +210,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Alphabet" id="AYP-Ux-TjO"/>
+                    <connections>
+                        <outlet property="headerTitle" destination="AYP-Ux-TjO" id="dr6-8K-RVy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfK-ny-Yl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2469.5999999999999" y="-375.56221889055473"/>
+            <point key="canvasLocation" x="2481" y="-336"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OFR-pL-8YR">
@@ -358,20 +370,12 @@ Images by : pizabay</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackboard_draw" translatesAutoresizingMaskIntoConstraints="NO" id="bz0-Mp-oAI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lessonX" translatesAutoresizingMaskIntoConstraints="NO" id="bz0-Mp-oAI">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXR-1g-XeA">
-                                <rect key="frame" x="68" y="574" width="39" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="listenButton"/>
-                                <connections>
-                                    <segue destination="NV4-7j-A3Z" kind="show" id="N4X-IM-f6A"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXe-16-a46" userLabel="Submit">
-                                <rect key="frame" x="127" y="574" width="121" height="42"/>
+                                <rect key="frame" x="216" y="574" width="121" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="submit"/>
                                 <connections>
@@ -379,12 +383,12 @@ Images by : pizabay</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6b6-Mr-nIH" customClass="SketchView" customModule="Sketch">
-                                <rect key="frame" x="38" y="110" width="299" height="299"/>
+                                <rect key="frame" x="38" y="184" width="299" height="299"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udp-wA-Ogg">
-                                <rect key="frame" x="290" y="417" width="36" height="30"/>
+                                <rect key="frame" x="301" y="491" width="36" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
@@ -392,34 +396,34 @@ Images by : pizabay</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Why-8C-ImF">
-                                <rect key="frame" x="241" y="417" width="41" height="30"/>
+                                <rect key="frame" x="216" y="491" width="41" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Undo"/>
                                 <connections>
                                     <action selector="undoDraw:" destination="ZTZ-rl-B1A" eventType="touchUpInside" id="26z-qG-PNY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Letter: A" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="97I-uL-bzq">
-                                <rect key="frame" x="166" y="455" width="160" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXR-1g-XeA">
+                                <rect key="frame" x="38" y="576" width="39" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B8v-Dj-nXs">
-                                <rect key="frame" x="166" y="499" width="160" height="67"/>
+                                <state key="normal" image="listenButton"/>
+                                <connections>
+                                    <segue destination="NV4-7j-A3Z" kind="show" id="N4X-IM-f6A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYk-JA-dep">
+                                <rect key="frame" x="103" y="72" width="168" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <outlet property="label" destination="B8v-Dj-nXs" id="Zle-Ph-5le"/>
+                        <outlet property="header" destination="UYk-JA-dep" id="Xad-rr-WZ8"/>
                         <outlet property="sketchView" destination="6b6-Mr-nIH" id="HZa-jn-5c1"/>
-                        <outlet property="word" destination="97I-uL-bzq" id="4f3-hV-oSV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zD1-Qg-WxI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -539,16 +543,15 @@ Images by : pizabay</string>
         <image name="CircleButtonApp-1" width="548.5714111328125" height="83.428573608398438"/>
         <image name="Cloudbackgroundbutton-1" width="2167" height="2204"/>
         <image name="Incorrect" width="220.5" height="76.5"/>
+        <image name="LessonPlan-1" width="375" height="667"/>
         <image name="Listen" width="220.5" height="76.5"/>
         <image name="blackboard" width="252.75" height="477"/>
         <image name="blackboard_apple" width="252.75" height="477"/>
-        <image name="blackboard_draw" width="252.75" height="477"/>
         <image name="congrats" width="220.5" height="76.5"/>
         <image name="correct" width="220.5" height="76.5"/>
         <image name="lesson1" width="2167" height="2204"/>
         <image name="lesson2" width="207.94224548339844" height="120"/>
         <image name="lesson3" width="2400" height="1790"/>
-        <image name="lessonPlan" width="375" height="667"/>
         <image name="lessonX" width="375" height="667"/>
         <image name="listenButton" width="33" height="30.75"/>
         <image name="submit" width="162.75" height="56.25"/>
@@ -556,4 +559,7 @@ Images by : pizabay</string>
         <image name="viewHistory1-1" width="375" height="667"/>
         <image name="viewHistoryWithOpaque-1" width="375" height="667"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6uj-vz-OWq"/>
+    </inferredMetricsTieBreakers>
 </document>

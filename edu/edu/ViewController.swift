@@ -16,13 +16,23 @@ class ViewController: UIViewController {
     
     
     @IBOutlet var sketchView: SketchView!
-    @IBOutlet var label: UILabel!
-    @IBOutlet var word: UILabel!
     
-    let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    @IBOutlet var header: UILabel!
+    var headerString: String = "Default"
+    
+    var list: [String] = []
     var counter = 0
     var currentWord = "a"
     var guess = ""
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        sketchView.lineColor = UIColor.white
+        sketchView.backgroundColor = UIColor.black
+        
+        header.text = headerString
+    }
     
     
     @IBAction func submitImage(_ sender: Any) {
@@ -42,13 +52,6 @@ class ViewController: UIViewController {
         sketchView.undo()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        sketchView.lineColor = UIColor.white
-        sketchView.backgroundColor = UIColor.black
-    }
-    
     /// - Tag: MLModelSetup
     lazy var classificationRequest: VNCoreMLRequest = {
         do {
@@ -57,7 +60,7 @@ class ViewController: UIViewController {
              To use a different Core ML classifier model, add it to the project
              and replace `MobileNet` with that model's generated Swift class.
              */
-            let model = try VNCoreMLModel(for: HandwritingClassifier().model)
+            let model = try VNCoreMLModel(for: AlphabetClassifier().model)
             
             let request = VNCoreMLRequest(model: model, completionHandler: { [weak self] request, error in
                 self?.processClassifications(for: request, error: error)
@@ -126,12 +129,8 @@ class ViewController: UIViewController {
     func checkGuess(guess: String) {
         print(guess)
         if(guess == self.currentWord){
-            self.label.text = "Congrats! " + guess.uppercased() + " is correct!"
             nextWord()
             sketchView.clear()
-        }
-        else {
-            self.label.text =  guess.uppercased() + " is incorrect. Please try again. You need to write " + self.currentWord.uppercased()
         }
     }
     
@@ -139,7 +138,6 @@ class ViewController: UIViewController {
         self.counter += 1
         if(counter < alphabet.count){
             self.currentWord = alphabet[counter]
-            self.word.text = "Current Letter: " + currentWord.uppercased()
         }
     }
     
