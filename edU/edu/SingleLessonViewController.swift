@@ -11,6 +11,8 @@ import UIKit
 class SingleLessonViewController: UIViewController {
 
     var lesson: String = ""
+    var descString: String = ""
+    @IBOutlet var desc: UILabel!
     
     var list: [String] = []
     
@@ -21,7 +23,7 @@ class SingleLessonViewController: UIViewController {
         super.viewDidLoad()
         
         headerTitle.title = lesson
-        
+        desc.text = descString
         
     }
     
@@ -33,12 +35,16 @@ class SingleLessonViewController: UIViewController {
             
             if(self.lesson == "Alphabet"){
                 lesson?.list = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+                lesson?.model = AlphabetClassifier().model
             }
+                
             else if(self.lesson == "Numbers"){
                 lesson?.list = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                lesson?.model = NumberClassifier().model
             }
             else if (self.lesson == "Shapes"){
                 lesson?.list = ["circle", "diamond", "oval", "rectangle", "square", "trapezoid", "triangle"]
+                lesson?.model = ShapeClassifier().model
             }
         }
     }

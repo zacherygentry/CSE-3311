@@ -23,6 +23,17 @@ class LessonsViewController: UIViewController {
         if(segue.destination is SingleLessonViewController){
             let lesson = segue.destination as? SingleLessonViewController
             lesson?.lesson = self.lesson
+            
+            if(self.lesson == "Alphabet"){
+                lesson?.descString = "Fun way to learn all 26 letters of the alphabet. After this lesson you will be able to read your alphabet soup 😊"
+            }
+            else if (self.lesson == "Numbers"){
+                lesson?.descString = "Fun way to learn the most essentials numbers 0 through 9. After this lesson, you will be able to count and write 10 numbers!"
+            }
+            
+            else if (self.lesson == "Shapes"){
+                lesson?.descString = "Fun way to learn the most essential shapes. After this, you will be able to draw nearly any shape out there!"
+            }
         }
     }
 
