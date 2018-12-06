@@ -2,7 +2,7 @@
 For CSE-3311, Object Oriented Software Engineering
 
 # Project
-Cross-platform educational app that helps kids learn spelling and shapes.
+Educational iOS app that helps kids learn letters, numbers, and shapes.
 
 # Proposed Stack
 * openCV
