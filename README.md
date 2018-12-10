@@ -13,7 +13,7 @@ Educational iOS app that helps kids learn letters, numbers, and shapes.
 
 
 # Example App, Competition
-https://itunes.apple.com/us/app/image-to-text-ocr/id1331848060?mt=8
+[Image to text OCR](https://itunes.apple.com/us/app/image-to-text-ocr/id1331848060?mt=8)
 Scribble Cards
 Trace It, Try It
 
