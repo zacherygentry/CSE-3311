@@ -5,7 +5,6 @@ For CSE-3311, Object Oriented Software Engineering
 Educational iOS app that helps kids learn letters, numbers, and shapes.
 
 # Proposed Stack
-* openCV
 * Xcode 
 * CoreML
 
